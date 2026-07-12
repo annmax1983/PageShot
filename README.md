@@ -159,6 +159,7 @@ Toast notification with Copy / Download / Edit actions
 | `storage` | Save your preferences locally |
 | `offscreen` | Process images in the background |
 | `tabs` | Get tab info for capture coordination |
+| `debugger` | Required for full-page screenshot stitching on certain Chromium builds |
 
 ---
 
@@ -172,8 +173,10 @@ Copyright © 2026 PageShot. All rights reserved.
 
 If you find PageShot helpful, consider supporting the project!
 
-**[👉 Support PageShot](https://annmax1983.github.io/PageShot/)**
+**[👉 Click here to support](https://ko-fi.com/annmax?ref=pageshot)**
 
 ---
+
+> **Note:** This repository is for **project showcase purposes only**. It does not contain the full source code, manifest, icons, or build scripts. Full source code will **not** be published here.
 
 > **Note:** All core screenshot features will always remain free with no limitations.
