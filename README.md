@@ -1,10 +1,10 @@
 # PageShot
 
-English | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
+English | [中文](languages/README_zh.md) | [Español](languages/README_es.md) | [Deutsch](languages/README_de.md) | [日本語](languages/README_ja.md) | [Français](languages/README_fr.md)
 
-A lightweight browser extension for capturing screenshots — full page, visible area, or any selection. Free, no watermark, 100% local processing.
+A lightweight browser extension for capturing screenshots — full page, visible area, or any selection. No forced watermark, fully local processing.
 
-> Chromium-based · Manifest V3 · Zero tracking · 100% In-Browser Processing
+> Chromium-based · Manifest V3 · Zero tracking · Fully In-Browser Processing
 
 ---
 
@@ -16,7 +16,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 |-----------|--------|
 | 🔒 **100% Private** | All processing happens locally. No servers, no uploads, no tracking. |
 | 💧 **No Watermark** | Clean screenshots, no branding imposed on your captures. |
-| 🆓 **Completely Free** | All features free, no paywalls, no premium tiers. |
+| 🆓 **No forced watermarks on captured images. |
 | 📄 **Full Page Capture** | One-click long screenshot — scrolls and stitches automatically. |
 | 📋 **Copy & Paste** | Copy to clipboard instantly — paste directly into chats, emails, documents. |
 | ✏️ **Built-in Annotation** | Draw rectangles and mosaic blur before sharing. |
@@ -163,6 +163,12 @@ Toast notification with Copy / Download / Edit actions
 
 ---
 
+## Copyright Disclaimer
+
+This screenshot tool is only for users' personal learning, document sorting and offline content recording. All text, pictures and multimedia content on web pages belong to the original copyright owner. Users shall not use screenshots for commercial reproduction, unauthorized reprinting, public distribution and other copyright-infringing behaviors. All legal liabilities arising from improper use shall be borne solely by the user.
+
+---
+
 ## License
 
 Copyright © 2026 PageShot. All rights reserved.
@@ -179,4 +185,3 @@ If you find PageShot helpful, consider supporting the project!
 
 > **Note:** This repository is for **project showcase purposes only**. It does not contain the full source code, manifest, icons, or build scripts. Full source code will **not** be published here.
 
-> **Note:** All core screenshot features will always remain free with no limitations.
