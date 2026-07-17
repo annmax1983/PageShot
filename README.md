@@ -4,7 +4,7 @@ English | [中文](languages/README_zh.md) | [Español](languages/README_es.md) 
 
 A lightweight browser extension for capturing screenshots — full page, visible area, or any selection. No forced watermark, fully local processing.
 
-> Chromium-based · Manifest V3 · Zero tracking · Fully In-Browser Processing
+> Chromium-based · Manifest V3 · No tracking · Fully In-Browser Processing
 
 ---
 
@@ -14,7 +14,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 | Advantage | Detail |
 |-----------|--------|
-| 🔒 **100% Private** | All processing happens locally. No servers, no uploads, no tracking. |
+| 🔒 **Privacy-First** | All processing happens locally. No servers, no uploads, no tracking. |
 | 💧 **No Watermark** | Clean screenshots, no branding imposed on your captures. |
 | 🆓 **No forced watermarks on captured images. |
 | 📄 **Full Page Capture** | One-click long screenshot — scrolls and stitches automatically. |
