@@ -35,7 +35,7 @@ Die meisten Screenshot-Tools verlangen Geld für Ganzseiten-Capture, fügen Wass
 | 💾 **Als PNG herunterladen** | Automatische Benennung: Seitentitel + Datum. |
 | ✏️ **Rechteck-Anmerkung** | Farbige Rechtecke zum Markieren. 5 Farben verfügbar. |
 | 🟦 **Mosaik-Blur** | Pixelt sensible Inhalte — Passwörter, persönliche Daten. |
-| ⌨️ **Tastenkürzel** | `Ctrl+Shift+V` Sichtbar + kopieren · `Ctrl+Shift+F` Ganze Seite + downloaden · `Ctrl+Shift+S` Auswahlmodus. |
+| ⌨️ **Tastenkürzel** | `Ctrl+Shift+Alt+V` Sichtbar + kopieren · `Ctrl+Shift+Alt+F` Ganze Seite + downloaden · `Ctrl+Shift+Alt+S` Auswahlmodus. |
 | 🔤 **6-Sprach-i18n** | Interface passt sich automatisch an Ihre Browsersprache an. |
 | 🔒 **Fixe Elemente** | Erkennt und entfernt sticky Headers/Footers aus Lang-Screenshots. |
 
@@ -76,9 +76,9 @@ Die meisten Screenshot-Tools verlangen Geld für Ganzseiten-Capture, fügen Wass
 
 | Tastenkürzel | Aktion |
 |--------------|--------|
-| `Ctrl+Shift+V` | Sichtbar erfassen → kopieren |
-| `Ctrl+Shift+F` | Ganze Seite → herunterladen |
-| `Ctrl+Shift+S` | Auswahlmodus |
+| `Ctrl+Shift+Alt+V` | Sichtbar erfassen → kopieren |
+| `Ctrl+Shift+Alt+F` | Ganze Seite → herunterladen |
+| `Ctrl+Shift+Alt+S` | Auswahlmodus |
 
 ---
 

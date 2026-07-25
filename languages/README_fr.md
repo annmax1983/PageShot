@@ -35,7 +35,7 @@ La plupart des outils de capture facturent la page complète, ajoutent des filig
 | 💾 **Télécharger en PNG** | Nom automatique : titre de la page + date. |
 | ✏️ **Annotation Rectangle** | Dessinez des rectangles colorés pour surligner. 5 couleurs disponibles. |
 | 🟦 **Flou Mosaïque** | Pixellise le contenu sensible — mots de passe, informations personnelles. |
-| ⌨️ **Raccourcis Clavier** | `Ctrl+Shift+V` Visible + copier · `Ctrl+Shift+F` Page entière + télécharger · `Ctrl+Shift+S` Mode sélection. |
+| ⌨️ **Raccourcis Clavier** | `Ctrl+Shift+Alt+V` Visible + copier · `Ctrl+Shift+Alt+F` Page entière + télécharger · `Ctrl+Shift+Alt+S` Mode sélection. |
 | 🔤 **i18n 6 Langues** | L'interface s'adapte automatiquement à votre langue : English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Éléments Fixes** | Détecte et supprime les headers/footers fixes des longues captures. |
 
@@ -76,9 +76,9 @@ La plupart des outils de capture facturent la page complète, ajoutent des filig
 
 | Raccourci | Action |
 |-----------|--------|
-| `Ctrl+Shift+V` | Capturer visible → copier |
-| `Ctrl+Shift+F` | Capturer page → télécharger |
-| `Ctrl+Shift+S` | Mode sélection |
+| `Ctrl+Shift+Alt+V` | Capturer visible → copier |
+| `Ctrl+Shift+Alt+F` | Capturer page → télécharger |
+| `Ctrl+Shift+Alt+S` | Mode sélection |
 
 ---
 
