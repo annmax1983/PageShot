@@ -35,7 +35,7 @@ La mayoría de herramientas de captura cobran por página completa, añaden marc
 | 💾 **Descargar como PNG** | Nombra automáticamente: título de página + fecha. |
 | ✏️ **Anotación con Rectángulo** | Dibuja rectángulos de colores para resaltar áreas. 5 colores disponibles. |
 | 🟦 **Desenfoque Mosaico** | Pixela contenido sensible — contraseñas, información personal. |
-| ⌨️ **Atajos de Teclado** | `Ctrl+Shift+Alt+V` Visible + copiar · `Ctrl+Shift+Alt+F` Página completa + descargar · `Ctrl+Shift+Alt+S` Modo selección. |
+| ⌨️ **Atajos de Teclado** | `Ctrl+Shift+V` Visible + copiar · `Ctrl+Shift+F` Página completa + descargar · `Ctrl+Shift+S` Modo selección. |
 | 🔤 **i18n en 6 Idiomas** | Interfaz auto-detecta tu idioma: English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Elementos Fijos** | Detecta y elimina headers/footers fijos de capturas largas. |
 
@@ -76,9 +76,9 @@ La mayoría de herramientas de captura cobran por página completa, añaden marc
 
 | Atajo | Acción |
 |-------|--------|
-| `Ctrl+Shift+Alt+V` | Capturar visible → copiar |
-| `Ctrl+Shift+Alt+F` | Capturar página → descargar |
-| `Ctrl+Shift+Alt+S` | Modo selección |
+| `Ctrl+Shift+V` | Capturar visible → copiar |
+| `Ctrl+Shift+F` | Capturar página → descargar |
+| `Ctrl+Shift+S` | Modo selección |
 
 ---
 

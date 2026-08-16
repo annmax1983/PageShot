@@ -36,7 +36,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | 💾 **Download as PNG** | Auto-names files with page title + date (e.g. `GitHub_-_Homepage_2026-07-07.png`). |
 | ✏️ **Rectangle Annotation** | Draw colored rectangles to highlight areas. 5 colors available: red, blue, green, black, white. |
 | 🟦 **Mosaic Blur** | Pixelate sensitive content — passwords, personal info, private messages. |
-| ⌨️ **Keyboard Shortcuts** | `Ctrl+Shift+Alt+V` — Capture visible + copy · `Ctrl+Shift+Alt+F` — Full page + download · `Ctrl+Shift+Alt+S` — Selection mode. |
+| ⌨️ **Keyboard Shortcuts** | `Ctrl+Shift+V` — Capture visible + copy · `Ctrl+Shift+F` — Full page + download · `Ctrl+Shift+S` — Selection mode. |
 | 🔤 **6-Language i18n** | UI auto-matches your browser language: English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Fixed Element Handling** | Automatically detects and removes sticky headers/footers from long screenshots. |
 
@@ -89,9 +89,9 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+Shift+Alt+V` | Capture visible area → copy to clipboard |
-| `Ctrl+Shift+Alt+F` | Capture full page → download as PNG |
-| `Ctrl+Shift+Alt+S` | Enter selection mode |
+| `Ctrl+Shift+V` | Capture visible area → copy to clipboard |
+| `Ctrl+Shift+F` | Capture full page → download as PNG |
+| `Ctrl+Shift+S` | Enter selection mode |
 
 ### Annotation
 
