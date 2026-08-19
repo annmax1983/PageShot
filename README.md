@@ -20,7 +20,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | 📄 **Full Page Capture** | One-click long screenshot — scrolls and stitches automatically. |
 | 📋 **Copy & Paste** | Copy to clipboard instantly — paste directly into chats, emails, documents. |
 | ✏️ **Built-in Annotation** | Draw rectangles and mosaic blur before sharing. |
-| ⚡ **Lightweight** | Under 100KB. No frameworks, no bloat. |
+| ⚡ **Lightweight** | No frameworks, no bloat. |
 | 🌍 **6 Languages** | Auto-detects your browser language. |
 
 ---

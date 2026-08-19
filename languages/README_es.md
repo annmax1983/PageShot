@@ -19,7 +19,7 @@ La mayoría de herramientas de captura cobran por página completa, añaden marc
 | 📄 **Página Completa** | Captura larga con un clic — desplazamiento y ensamblaje automático. |
 | 📋 **Copiar y Pegar** | Copia al portapapeles al instante — pega directamente en chats, emails, documentos. |
 | ✏️ **Anotación Integrada** | Dibuja rectángulos y desenfoque mosaico antes de compartir. |
-| ⚡ **Ligero** | Menos de 100KB. Sin frameworks, sin peso extra. |
+| ⚡ **Ligero** | Sin frameworks, sin peso extra. |
 | 🌍 **6 Idiomas** | Detección automática del idioma del navegador. |
 
 ---

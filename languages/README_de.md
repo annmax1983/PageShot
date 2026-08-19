@@ -19,7 +19,7 @@ Die meisten Screenshot-Tools verlangen Geld für Ganzseiten-Capture, fügen Wass
 | 📄 **Ganze Seite** | Ein-Klick-Lang-Screenshot — automatisches Scrollen und Zusammenfügen. |
 | 📋 **Kopieren & Einfügen** | Sofort in die Zwischenablage kopieren — direkt in Chats, E-Mails, Dokumente einfügen. |
 | ✏️ **Integrierte Anmerkungen** | Rechtecke zeichnen und Mosaik-Blur vor dem Teilen. |
-| ⚡ **Leichtgewichtig** | Unter 100KB. Keine Frameworks. |
+| ⚡ **Leichtgewichtig** | Keine Frameworks, kein Ballast. |
 | 🌍 **6 Sprachen** | Erkennt Ihre Browsersprache automatisch. |
 
 ---

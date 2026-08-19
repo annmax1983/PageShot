@@ -19,7 +19,7 @@ La plupart des outils de capture facturent la page complète, ajoutent des filig
 | 📄 **Page Entière** | Capture longue en un clic — défilement et assemblage automatiques. |
 | 📋 **Copier et Coller** | Copie instantanée dans le presse-papiers — collez directement dans les chats, emails, documents. |
 | ✏️ **Annotation Intégrée** | Dessinez des rectangles et flou mosaïque avant de partager. |
-| ⚡ **Léger** | Moins de 100KB. Pas de frameworks. |
+| ⚡ **Léger** | Pas de frameworks, pas de surcharge. |
 | 🌍 **6 Langues** | Détecte automatiquement la langue de votre navigateur. |
 
 ---
