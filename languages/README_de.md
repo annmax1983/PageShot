@@ -26,6 +26,8 @@ Die meisten Screenshot-Tools verlangen Geld für Ganzseiten-Capture, fügen Wass
 
 ## Funktionen
 
+### 🆓 Kostenlose Funktionen
+
 | Funktion | Beschreibung |
 |----------|-------------|
 | 📄 **Ganzseiten-Screenshot** | Erfasst die gesamte scrollbare Seite. Unterstützt Lazy-Loading und sehr lange Seiten (10.000px+). |
@@ -92,6 +94,13 @@ Die meisten Screenshot-Tools verlangen Geld für Ganzseiten-Capture, fügen Wass
 - ✅ **Minimale Berechtigungen** — Nur das Notwendigste
 
 ---
+
+---
+
+## Hinweis zum Quellcode
+
+> ⚠️ **Dieses Repository veröffentlicht keinen Quellcode.** Es enthält nur Nutzerdokumentation, Versionshinweise und Support-Ressourcen. Die Erweiterung wird ausschließlich über den Chrome Web Store vertrieben. Es werden keine Offline-Installationspakete oder Quellcodes für Endbenutzer bereitgestellt.
+
 
 ## Urheberrechtlicher Haftungsausschluss
 

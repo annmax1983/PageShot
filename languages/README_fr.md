@@ -26,6 +26,8 @@ La plupart des outils de capture facturent la page complète, ajoutent des filig
 
 ## Fonctionnalités
 
+### 🆓 Fonctionnalités Gratuites
+
 | Fonctionnalité | Description |
 |----------------|-------------|
 | 📄 **Capture Page Entière** | Capture toute la page défilable. Gère les images en chargement différé et les très longues pages (10 000px+). |
@@ -92,6 +94,13 @@ La plupart des outils de capture facturent la page complète, ajoutent des filig
 - ✅ **Permissions minimales** — Uniquement le strict nécessaire
 
 ---
+
+---
+
+## Avis sur le code source
+
+> ⚠️ **Ce dépôt ne publie pas le code source.** Il contient uniquement la documentation d'utilisation, les notes de mise à jour et les ressources d'assistance. L'extension est distribuée exclusivement via le Chrome Web Store. Aucun package d'installation hors ligne ni code source pour les utilisateurs finaux n'est fourni.
+
 
 ## Avis de droit d'auteur
 

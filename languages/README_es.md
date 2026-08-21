@@ -26,6 +26,8 @@ La mayoría de herramientas de captura cobran por página completa, añaden marc
 
 ## Funciones
 
+### 🆓 Funciones Gratuitas
+
 | Función | Descripción |
 |---------|-------------|
 | 📄 **Captura de Página Completa** | Captura toda la página desplazable. Soporta imágenes lazy-loaded y páginas muy largas (10,000px+). |
@@ -92,6 +94,13 @@ La mayoría de herramientas de captura cobran por página completa, añaden marc
 - ✅ **Permisos mínimos** — Solo lo estrictamente necesario
 
 ---
+
+---
+
+## Aviso de código fuente
+
+> ⚠️ **Este repositorio no publica el código fuente.** Contiene únicamente documentación de uso, notas de versión y recursos de soporte. La extensión se distribuye exclusivamente a través de Chrome Web Store. No se proporcionan paquetes de instalación sin conexión ni código fuente para usuarios finales.
+
 
 ## Aviso de derechos de autor
 

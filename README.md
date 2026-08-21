@@ -27,6 +27,8 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 ## Features
 
+### 🆓 Free Features
+
 | Feature | Description |
 |---------|-------------|
 | 📄 **Full Page Screenshot** | Captures the entire scrollable page by auto-scrolling and stitching segments. Handles lazy-loaded images and very long pages (10,000px+). |
@@ -39,6 +41,29 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | ⌨️ **Keyboard Shortcuts** | `Ctrl+Shift+V` — Capture visible + copy · `Ctrl+Shift+F` — Full page + download · `Ctrl+Shift+S` — Selection mode. |
 | 🔤 **6-Language i18n** | UI auto-matches your browser language: English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Fixed Element Handling** | Automatically detects and removes sticky headers/footers from long screenshots. |
+
+### ⭐ Premium Features (License Required)
+
+| Feature | Description |
+|---------|-------------|
+| 📑 **Batch Capture** | Capture multiple tabs at once — one-click to screenshot all open tabs |
+| 📄 **Export as PDF** | Export captured screenshots as a PDF document with page breaks |
+| 🖊️ **Advanced Annotation** | Text labels, arrows, shapes and more annotation tools |
+| 💬 **Priority Support** | Priority email support for Premium users |
+
+### Free vs Premium
+
+| | Free | Premium |
+|---|:---:|:---:|
+| Full page / visible / selection capture | ✅ | ✅ |
+| Copy to clipboard & download as PNG | ✅ | ✅ |
+| Rectangle annotation & mosaic blur | ✅ | ✅ |
+| Keyboard shortcuts | ✅ | ✅ |
+| Fixed element handling | ✅ | ✅ |
+| Batch capture multiple tabs | — | ✅ |
+| Export as PDF | — | ✅ |
+| Advanced annotation (text, arrows, shapes) | — | ✅ |
+| Priority support | — | ✅ |
 
 ---
 
