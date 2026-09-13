@@ -31,7 +31,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 | Feature | Description |
 |---------|-------------|
-| 📄 **Full Page Screenshot** | Captures the entire scrollable page by auto-scrolling and stitching segments. Handles lazy-loaded images and very long pages (10,000px+). |
+| 📄 **Full Page Screenshot** | Captures the entire scrollable page in one shot via Chrome DevTools Protocol. Handles lazy-loaded images and very long pages. |
 | 👁 **Visible Area Capture** | Instant capture of what's currently on screen. The fastest way to screenshot. |
 | ✂️ **Selection Capture** | Drag to select any region on the page with a crosshair overlay. Precise and flexible. |
 | 📋 **Copy to Clipboard** | One-click copy after capture. Paste directly into any app with Ctrl+V. |
@@ -46,9 +46,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 | Feature | Description |
 |---------|-------------|
-| 📑 **Batch Capture** | Capture multiple tabs at once — one-click to screenshot all open tabs |
-| 📄 **Export as PDF** | Export captured screenshots as a PDF document with page breaks |
-| 🖊️ **Advanced Annotation** | Text labels, arrows, shapes and more annotation tools |
+| 📑 **Export as PDF** | Export any captured screenshot (including long pages) as a PDF document — from the annotation editor |
 | 💬 **Priority Support** | Priority email support for Premium users |
 
 ### Free vs Premium
@@ -60,9 +58,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | Rectangle annotation & mosaic blur | ✅ | ✅ |
 | Keyboard shortcuts | ✅ | ✅ |
 | Fixed element handling | ✅ | ✅ |
-| Batch capture multiple tabs | — | ✅ |
 | Export as PDF | — | ✅ |
-| Advanced annotation (text, arrows, shapes) | — | ✅ |
 | Priority support | — | ✅ |
 
 ---
@@ -160,10 +156,10 @@ Trigger (right-click / shortcut / popup)
 Service Worker coordinates the capture
        ↓
 ┌─ Visible Area: chrome.tabs.captureVisibleTab()
-├─ Full Page: scroll → capture each viewport segment → stitch via Canvas
+├─ Full Page: expand viewport via CDP → single high-res capture
 └─ Selection: capture visible → crop to selection rectangle
        ↓
-Offscreen Document processes image (stitch / crop / clipboard)
+Offscreen Document processes image (crop / clipboard)
        ↓
 Toast notification with Copy / Download / Edit actions
 ```
