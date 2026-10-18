@@ -10,11 +10,11 @@ A lightweight browser extension for capturing screenshots — full page, visible
 
 ## Why PageShot?
 
-Most screenshot tools charge for full-page capture, add watermarks, or upload your data to remote servers. PageShot does everything inside your browser — no data ever leaves your machine.
+Most screenshot tools charge for full-page capture, add watermarks, or upload your data to remote servers. PageShot does everything inside your browser — no screenshot data ever leaves your machine.
 
 | Advantage | Detail |
 |-----------|--------|
-| 🔒 **Privacy-First** | All processing happens locally. No servers, no uploads, no tracking. |
+| 🔒 **Privacy-First** | All processing happens locally. No uploads, no tracking. The only outbound request is optional license validation. |
 | 💧 **No Watermark** | Clean screenshots, no branding imposed on your captures. |
 | 🆓 **No forced watermarks on captured images. |
 | 📄 **Full Page Capture** | One-click long screenshot — scrolls and stitches automatically. |
@@ -140,7 +140,7 @@ PageShot
 PageShot is built with privacy as a core principle:
 
 - ✅ **Zero data upload** — All screenshot processing happens locally
-- ✅ **No analytics** — No tracking, no telemetry, no remote calls
+- ✅ **No analytics** — No tracking, no telemetry, no remote calls apart from optional license validation
 - ✅ **No cookies** — No reading or writing of browser cookies
 - ✅ **No browsing history** — No access to your browsing data
 - ✅ **Temporary storage only** — Screenshots exist briefly during processing, then cleared

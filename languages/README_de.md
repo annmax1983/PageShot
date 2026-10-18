@@ -10,11 +10,11 @@ Eine schlanke Browser-Erweiterung für Screenshots — ganze Seite, sichtbarer B
 
 ## Warum PageShot?
 
-Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wasserzeichen hinzu oder laden deine Daten auf Remote-Server hoch. PageShot erledigt alles in deinem Browser — keine Daten verlassen jemals deinen Rechner.
+Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wasserzeichen hinzu oder laden deine Daten auf Remote-Server hoch. PageShot erledigt alles in deinem Browser — keine Screenshot-Daten verlassen jemals deinen Rechner.
 
 | Vorteil | Details |
 |---------|---------|
-| 🔒 **Datenschutz zuerst** | Alles wird lokal verarbeitet. Keine Server, keine Uploads, kein Tracking. |
+| 🔒 **Datenschutz zuerst** | Alles wird lokal verarbeitet. Keine Uploads, kein Tracking. Die einzige ausgehende Anfrage ist die optionale Lizenzprüfung. |
 | 💧 **Kein Wasserzeichen** | Saubere Screenshots, kein Branding auf deinen Aufnahmen. |
 | 🆓 **Keine erzwungenen Wasserzeichen auf aufgenommenen Bildern. |
 | 📄 **Ganze Seite** | Klick auf einen langen Screenshot — scrollt und fügt automatisch zusammen. |
@@ -140,7 +140,7 @@ PageShot
 PageShot wurde mit Datenschutz als Grundprinzip entwickelt:
 
 - ✅ **Kein Datenupload** — Die gesamte Screenshot-Verarbeitung passiert lokal
-- ✅ **Keine Analytik** — Kein Tracking, keine Telemetrie, keine Remote-Aufrufe
+- ✅ **Keine Analytik** — Kein Tracking, keine Telemetrie, keine Remote-Aufrufe außer der optionalen Lizenzprüfung
 - ✅ **Keine Cookies** — Kein Lesen oder Schreiben von Browser-Cookies
 - ✅ **Kein Verlauf** — Kein Zugriff auf deine Browserdaten
 - ✅ **Nur temporärer Speicher** — Screenshots existieren kurz während der Verarbeitung und werden dann gelöscht

@@ -10,11 +10,11 @@ Une extension légère pour capturer des captures d'écran — page complète, z
 
 ## Pourquoi PageShot ?
 
-La plupart des outils de capture d'écran facturent la capture de page complète, ajoutent des filigranes ou envoient vos données sur des serveurs distants. PageShot fait tout dans votre navigateur — aucune donnée ne quitte votre machine.
+La plupart des outils de capture d'écran facturent la capture de page complète, ajoutent des filigranes ou envoient vos données sur des serveurs distants. PageShot fait tout dans votre navigateur — aucune capture ne quitte votre navigateur.
 
 | Avantage | Détail |
 |-----------|--------|
-| 🔒 **Confidentialité avant tout** | Tout le traitement se fait en local. Pas de serveurs, pas d'envoi, pas de suivi. |
+| 🔒 **Confidentialité avant tout** | Tout le traitement se fait en local. Pas d'envoi, pas de suivi. La seule requête sortante est la validation facultative de licence. |
 | 💧 **Sans filigrane** | Captures propres, aucune marque imposée sur vos images. |
 | 🆓 **Pas de filigrane forcé sur les images capturées. |
 | 📄 **Capture de page complète** | Capture longue en un clic — défilement et assemblage automatiques. |
@@ -140,7 +140,7 @@ PageShot
 PageShot a été conçu avec la confidentialité comme principe fondamental :
 
 - ✅ **Zéro envoi de données** — Tout le traitement des captures se fait en local
-- ✅ **Pas d'analytics** — Aucun suivi, aucune télémétrie, aucun appel distant
+- ✅ **Pas d'analytics** — Aucun suivi, aucune télémétrie, aucun appel distant hormis la validation facultative de licence
 - ✅ **Pas de cookies** — Aucune lecture ni écriture de cookies du navigateur
 - ✅ **Pas d'historique de navigation** — Aucun accès à vos données de navigation
 - ✅ **Stockage temporaire uniquement** — Les captures existent brièvement pendant le traitement, puis sont supprimées

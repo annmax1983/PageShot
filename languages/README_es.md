@@ -10,11 +10,11 @@ Una extensión ligera para el navegador que captura capturas de pantalla — pá
 
 ## ¿Por qué PageShot?
 
-La mayoría de herramientas de captura de pantalla cobran por la captura de página completa, añaden marcas de agua o suben tus datos a servidores remotos. PageShot hace todo dentro de tu navegador — tus datos nunca salen de tu máquina.
+La mayoría de herramientas de captura de pantalla cobran por la captura de página completa, añaden marcas de agua o suben tus datos a servidores remotos. PageShot hace todo dentro de tu navegador — tus capturas nunca salen de tu navegador.
 
 | Ventaja | Detalle |
 |---------|--------|
-| 🔒 **Privacidad ante todo** | Todo el procesamiento ocurre localmente. Sin servidores, sin subidas, sin rastreo. |
+| 🔒 **Privacidad ante todo** | Todo el procesamiento ocurre localmente. Sin subidas, sin rastreo. La única petición saliente es la validación opcional de la licencia. |
 | 💧 **Sin marca de agua** | Capturas limpias, sin branding impuesto en tus capturas. |
 | 🆓 **Sin marcas de agua forzadas en las imágenes capturadas. |
 | 📄 **Captura de página completa** | Captura larga con un clic — se desplaza y une automáticamente. |
@@ -140,7 +140,7 @@ PageShot
 PageShot está construida con la privacidad como principio fundamental:
 
 - ✅ **Cero subida de datos** — Todo el procesamiento de capturas ocurre localmente
-- ✅ **Sin analíticas** — Sin rastreo, sin telemetría, sin llamadas remotas
+- ✅ **Sin analíticas** — Sin rastreo, sin telemetría, sin llamadas remotas salvo la validación opcional de la licencia
 - ✅ **Sin cookies** — Sin lectura ni escritura de cookies del navegador
 - ✅ **Sin historial de navegación** — Sin acceso a tus datos de navegación
 - ✅ **Solo almacenamiento temporal** — Las capturas existen brevemente durante el procesamiento y luego se borran
