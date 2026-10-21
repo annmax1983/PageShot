@@ -16,7 +16,6 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 |---------|---------|
 | 🔒 **Datenschutz zuerst** | Alles wird lokal verarbeitet. Keine Uploads, kein Tracking. Die einzige ausgehende Anfrage ist die optionale Lizenzprüfung. |
 | 💧 **Kein Wasserzeichen** | Saubere Screenshots, kein Branding auf deinen Aufnahmen. |
-| 🆓 **Keine erzwungenen Wasserzeichen auf aufgenommenen Bildern. |
 | 📄 **Ganze Seite** | Klick auf einen langen Screenshot — scrollt und fügt automatisch zusammen. |
 | 📋 **Kopieren & Einfügen** | Sofort in die Zwischenablage kopieren — direkt in Chats, E-Mails, Dokumente einfügen. |
 | ✏️ **Integrierte Annotation** | Rechtecke und Mosaik-Blur vor dem Teilen zeichnen. |
@@ -143,7 +142,7 @@ PageShot wurde mit Datenschutz als Grundprinzip entwickelt:
 - ✅ **Keine Analytik** — Kein Tracking, keine Telemetrie, keine Remote-Aufrufe außer der optionalen Lizenzprüfung
 - ✅ **Keine Cookies** — Kein Lesen oder Schreiben von Browser-Cookies
 - ✅ **Kein Verlauf** — Kein Zugriff auf deine Browserdaten
-- ✅ **Nur temporärer Speicher** — Screenshots existieren kurz während der Verarbeitung und werden dann gelöscht
+- ✅ **Lokaler Bearbeitungsspeicher** — Die fünf letzten Aufnahmen bleiben für den Anmerkungseditor im Browser; ältere werden automatisch entfernt. Nichts wird hochgeladen
 - ✅ **Minimale Berechtigungen** — Nur das absolut Notwendige
 
 ---

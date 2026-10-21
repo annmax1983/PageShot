@@ -1,404 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PageShot - Privacy Policy</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background: #0f0f1a;
-      color: #cdd6f4;
-      line-height: 1.8;
-    }
-    .container { max-width: 760px; margin: 0 auto; padding: 60px 24px; }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
-      background: linear-gradient(135deg, #4fc3f7, #a6e3a1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .updated { color: #6c7086; font-size: 14px; margin-bottom: 40px; }
-    .highlight {
-      background: #1e1e2e;
-      border: 1px solid #313244;
-      border-left: 4px solid #4fc3f7;
-      padding: 20px 24px;
-      border-radius: 8px;
-      margin-bottom: 32px;
-      font-size: 15px;
-    }
-    .highlight strong { color: #4fc3f7; }
-    h2 {
-      font-size: 20px;
-      color: #a6e3a1;
-      margin: 36px 0 16px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #313244;
-    }
-    p { margin-bottom: 14px; font-size: 15px; color: #bac2de; }
-    ul { padding-left: 24px; margin-bottom: 16px; }
-    li { margin-bottom: 8px; font-size: 15px; color: #bac2de; }
-    li strong { color: #cdd6f4; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #313244; font-size: 14px; }
-    th { color: #a6e3a1; font-weight: 600; }
-    td { color: #bac2de; }
-    .contact {
-      background: #1e1e2e;
-      border: 1px solid #313244;
-      padding: 20px 24px;
-      border-radius: 8px;
-      margin-top: 36px;
-    }
-    a { color: #4fc3f7; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #313244;
-      text-align: center;
-      color: #6c7086;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PageShot — Privacy Policy</title>
+<meta name="description" content="PageShot privacy policy: what is stored on your device, when the extension uses the network, and how to delete your data.">
+<link rel="icon" href="icons/icon128.png">
+<style>
+:root{
+  --accent:#be123c;
+  --accent-2:#fb7185;
+  --bg:#f5f8fc;
+  --surface:#ffffff;
+  --ink:#20304a;
+  --body:#4b5870;
+  --muted:#64718a;
+  --line:#e2e8f2;
+  --tint:#eef3fb;
+  --tint:color-mix(in srgb, var(--accent) 8%, #ffffff);
+  --tint-strong:#e5edfa;
+  --tint-strong:color-mix(in srgb, var(--accent) 14%, #ffffff);
+  --shadow:0 18px 45px rgba(32,48,74,.10);
+  --shadow-soft:0 8px 24px rgba(32,48,74,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{
+  margin:0;
+  color:var(--body);
+  background:radial-gradient(900px 420px at 100% -8%, color-mix(in srgb, var(--accent-2) 12%, #ffffff) 0%, rgba(255,255,255,0) 70%), var(--bg);
+  font-family:"Segoe UI Variable Text","Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{display:block;max-width:100%}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+button,select{font:inherit}
+[hidden]{display:none !important}
+::selection{background:color-mix(in srgb, var(--accent) 22%, #ffffff);color:var(--ink)}
+:focus-visible{outline:2px solid color-mix(in srgb, var(--accent) 55%, #ffffff);outline-offset:3px}
+.wrap{width:min(1120px, calc(100% - 40px));margin:0 auto}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.topbar-inner{display:flex;align-items:center;gap:18px;height:70px}
+.brand{display:flex;align-items:center;gap:11px;color:var(--ink);font-size:16px;font-weight:750;letter-spacing:-.015em;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:9px;background:#fff;border:1px solid var(--line)}
+.nav-links{display:flex;align-items:center;gap:20px;margin-left:auto;font-size:13.5px;font-weight:650}
+.nav-links a{color:var(--muted)}
+.nav-links a:hover{color:var(--accent);text-decoration:none}
+.top-actions{display:flex;align-items:center;gap:9px;margin-left:auto}
+.nav-links + .top-actions{margin-left:0}
+.icon-btn{width:38px;height:38px;display:grid;place-items:center;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--muted)}
+.icon-btn:hover{color:var(--accent);border-color:color-mix(in srgb, var(--accent) 26%, var(--line));text-decoration:none}
+.lang{
+  appearance:none;-webkit-appearance:none;
+  border:1px solid var(--line);
+  background-color:#fff;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364718a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 10px center;
+  background-size:12px;
+  color:var(--ink);
+  border-radius:10px;
+  padding:9px 32px 9px 11px;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+  max-width:150px;
+}
+.lang:hover{border-color:color-mix(in srgb, var(--accent) 26%, var(--line))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 20px;border-radius:12px;border:1px solid transparent;font-weight:700;font-size:14.5px;line-height:1.2;transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 12px 26px color-mix(in srgb, var(--accent) 26%, transparent)}
+.btn-primary:hover{background:color-mix(in srgb, var(--accent) 90%, var(--ink));box-shadow:0 15px 30px color-mix(in srgb, var(--accent) 30%, transparent)}
+.btn-secondary{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-secondary:hover{border-color:color-mix(in srgb, var(--accent) 28%, var(--line))}
+.btn-quiet{background:transparent;color:var(--muted);padding:0 8px}
+.btn-quiet:hover{color:var(--accent)}
+.site-footer{margin-top:48px;border-top:1px solid var(--line);background:rgba(255,255,255,.8);padding:32px 0}
+.footer-inner{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between}
+.footer-brand{display:flex;align-items:center;gap:11px;color:var(--ink);font-size:14px;font-weight:700}
+.footer-brand img{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.footer-brand .copy{display:block;color:var(--muted);font-size:12px;font-weight:500;line-height:1.4;margin-top:1px}
+.footer-links{display:flex;flex-wrap:wrap;gap:9px 18px;align-items:center;font-size:13px;font-weight:600}
+.footer-links a{color:var(--muted)}
+.footer-links a:hover{color:var(--accent);text-decoration:none}
+@media (max-width:900px){
+  .nav-links{display:none}
+  .topbar-inner{height:62px}
+  .wrap{width:calc(100% - 32px)}
+}
+@media (max-width:560px){
+  .brand span{display:none}
+  .lang{max-width:124px}
+  .site-footer{padding:26px 0}
+  .footer-inner{align-items:flex-start;flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+}
+
+.policy-hero{padding:42px 0 8px}
+.policy-hero-card{position:relative;overflow:hidden;background:linear-gradient(135deg,#ffffff 0%, color-mix(in srgb, var(--accent) 7%, #ffffff) 58%, color-mix(in srgb, var(--accent-2) 16%, #ffffff) 100%);border:1px solid var(--line);border-radius:26px;padding:42px 46px 36px;box-shadow:var(--shadow)}
+.policy-hero-card::after{content:"";position:absolute;width:360px;height:360px;right:-110px;top:-160px;border-radius:50%;border:1px solid color-mix(in srgb, var(--accent) 22%, #ffffff);box-shadow:0 0 0 48px color-mix(in srgb, var(--accent) 5%, transparent);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid color-mix(in srgb, var(--accent) 22%, var(--line));color:var(--accent);font-size:11.5px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.policy-hero h1{position:relative;z-index:1;margin:16px 0 0;color:var(--ink);font-size:clamp(34px,4.4vw,50px);line-height:1.06;letter-spacing:-.035em;font-weight:800}
+.policy-hero h1 .h1-sub{color:var(--accent);font-weight:780}
+.summary{position:relative;z-index:1;max-width:860px;margin:16px 0 20px;color:var(--body);font-size:15.5px;line-height:1.75}
+.summary strong{color:var(--ink);font-weight:700}
+.chips{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.8);color:var(--ink);font-size:12.5px;font-weight:650}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-2)}
+.updated{position:relative;z-index:1;display:flex;align-items:center;gap:7px;margin:18px 0 0;color:var(--muted);font-size:12.5px;font-weight:550}
+.updated svg{color:var(--accent)}
+.policy-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:28px;align-items:start;padding:32px 0 38px}
+.toc{position:sticky;top:92px;max-height:calc(100vh - 120px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow-soft)}
+.toc-title{margin:2px 0 10px;color:var(--ink);font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+#p-toc{display:grid;gap:2px}
+#p-toc a{display:grid;grid-template-columns:24px minmax(0,1fr);gap:7px;align-items:baseline;padding:7px 9px;border-radius:9px;border:1px solid transparent;color:var(--muted);font-size:12.8px;line-height:1.38}
+#p-toc a span{color:color-mix(in srgb, var(--accent) 58%, var(--muted));font-size:10px;font-weight:800;letter-spacing:.06em}
+#p-toc a:hover{background:var(--tint);color:var(--ink);text-decoration:none}
+#p-toc a.active{background:var(--tint);border-color:color-mix(in srgb, var(--accent) 18%, var(--line));color:var(--ink)}
+#p-toc a.active span{color:var(--accent)}
+.policy-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 32px;box-shadow:var(--shadow-soft)}
+.policy-card + .policy-card{margin-top:15px}
+.policy-card h2{display:flex;align-items:baseline;gap:11px;margin:0 0 16px;color:var(--ink);font-size:21px;line-height:1.3;letter-spacing:-.015em;font-weight:760}
+.policy-num{flex:none;padding:3px 7px;border-radius:7px;background:var(--tint);color:var(--accent);font-size:10.5px;font-weight:800;letter-spacing:.06em}
+.policy-body{color:var(--body);font-size:15px;line-height:1.75;overflow-wrap:anywhere}
+.policy-body p{margin:0 0 14px}
+.policy-body p:last-child{margin-bottom:0}
+.policy-body strong{color:var(--ink);font-weight:700}
+.policy-body em{color:var(--body)}
+.policy-body a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.policy-body a:hover{color:color-mix(in srgb, var(--accent) 80%, var(--ink))}
+.policy-body code{display:inline;padding:1px 6px;border:1px solid var(--line);border-radius:6px;background:#f3f6fb;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em}
+.policy-body ul{display:grid;gap:8px;margin:0 0 15px;padding:0;list-style:none}
+.policy-body ul:last-child{margin-bottom:0}
+.policy-body li{position:relative;padding-left:21px}
+.policy-body li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--accent-2)}
+.policy-body h3{margin:21px 0 8px;color:var(--ink);font-size:15.5px;line-height:1.4;font-weight:750}
+.policy-body h3:first-child{margin-top:0}
+.policy-body .note{margin:15px 0 0;padding:13px 15px;border-left:3px solid var(--accent);border-radius:10px;background:var(--tint);color:var(--body);font-size:13.5px;line-height:1.65}
+.table-wrap{margin:15px 0;overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.policy-body table{width:100%;min-width:480px;border-collapse:collapse;font-size:13.5px;line-height:1.55}
+.policy-body th{padding:10px 13px;border-bottom:1px solid var(--line);background:#f4f7fc;color:var(--ink);text-align:left;font-weight:700}
+.policy-body td{padding:10px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+.policy-body th:first-child,.policy-body td:first-child{min-width:150px}
+.policy-body tr:last-child td{border-bottom:none}
+.policy-body table code{white-space:nowrap}
+@media (max-width:900px){
+  .policy-hero{padding:26px 0 4px}
+  .policy-hero-card{padding:30px 24px 28px;border-radius:22px}
+  .policy-layout{grid-template-columns:1fr;gap:16px;padding:22px 0 30px}
+  .toc{position:static;max-height:none;padding:14px}
+  #p-toc{grid-template-columns:1fr 1fr}
+  .policy-card{padding:23px 20px}
+  .policy-card h2{font-size:19px}
+}
+@media (max-width:600px){
+  #p-toc{grid-template-columns:1fr}
+  .policy-card{padding:21px 17px}
+  .policy-body{font-size:14.5px}
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>🔒 <span data-i18n="title"></span></h1>
-    <p class="updated">PageShot &mdash; <span data-i18n="lastUpdated"></span></p>
-
-    <div class="highlight">
-      <strong>TL;DR:</strong> <span data-i18n="tldr"></span>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><img src="icons/icon128.png" alt="" width="32" height="32"><span>PageShot</span></a>
+    <div class="top-actions">
+      <a class="icon-btn" href="https://github.com/annmax1983/PageShot" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.4 9.4 0 0 1 12 5.96c.85 0 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+      <select class="lang" id="p-lang" aria-label="Language"><option value="en">English</option><option value="zh">简体中文</option><option value="ja">日本語</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option></select>
+      <a class="icon-btn" href="index.html" aria-label="Home" title="Home"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v10h12V10"/></svg></a>
     </div>
-
-    <h2 data-i18n="s1Title"></h2>
-    <p data-i18n="s1Text"></p>
-
-    <h2 data-i18n="s2Title"></h2>
-    <p data-i18n="s2Text"></p>
-    <ul>
-      <li data-i18n="s2a"></li>
-      <li data-i18n="s2b"></li>
-      <li data-i18n="s2c"></li>
-      <li data-i18n="s2d"></li>
-    </ul>
-    <p data-i18n="s2End"></p>
-
-    <h2 data-i18n="s3Title"></h2>
-    <table>
-      <tr><th data-i18n="permCol"></th><th data-i18n="purposeCol"></th></tr>
-      <tr><td><code>activeTab</code></td><td data-i18n="permActiveTab"></td></tr>
-      <tr><td><code>contextMenus</code></td><td data-i18n="permContextMenus"></td></tr>
-      <tr><td><code>downloads</code></td><td data-i18n="permDownloads"></td></tr>
-      <tr><td><code>clipboardWrite</code></td><td data-i18n="permClipboard"></td></tr>
-      <tr><td><code>scripting</code></td><td data-i18n="permScripting"></td></tr>
-      <tr><td><code>storage</code></td><td data-i18n="permStorage"></td></tr>
-      <tr><td><code>offscreen</code></td><td data-i18n="permOffscreen"></td></tr>
-      <tr><td><code>tabs</code></td><td data-i18n="permTabs"></td></tr>
-      <tr><td><code>debugger</code></td><td data-i18n="permDebugger"></td></tr>
-    </table>
-    <p data-i18n="s3Note"></p>
-
-    <h2 data-i18n="s4Title"></h2>
-    <p data-i18n="s4Text"></p>
-
-    <h2 data-i18n="s5Title"></h2>
-    <p data-i18n="s5Text"></p>
-
-    <h2 data-i18n="s6Title"></h2>
-    <p data-i18n="s6Text"></p>
-
-    <h2 data-i18n="s7Title"></h2>
-    <p data-i18n="s7Text"></p>
-
-    <h2 data-i18n="s8Title"></h2>
-    <p data-i18n="s8Text"></p>
-
-    <div class="contact">
-      <h2 data-i18n="s9Title"></h2>
-      <p data-i18n="s9Text"></p>
-      <ul>
-        <li>GitHub: <a href="https://github.com/annmax1983/PageShot">github.com/annmax1983/PageShot</a></li>
-      </ul>
-    </div>
-
-    <footer>
-      <p>&copy; 2026 PageShot. <span data-i18n="rights"></span></p>
-      <p><a href="https://annmax1983.github.io/PageShot/support.html" data-i18n="home"></a></p>
-    </footer>
   </div>
+</header>
+<main>
+  <section class="policy-hero">
+    <div class="wrap">
+      <div class="policy-hero-card">
+        <span class="eyebrow" id="p-eyebrow">Privacy Policy</span>
+        <h1><span id="p-h1">PageShot</span> <span class="h1-sub" id="p-h1-sub">Privacy Policy</span></h1>
+        <p class="summary" id="p-summary">PageShot does NOT collect, store, or transmit any of your personal data. All screenshot processing happens fully locally on your device. The only network request the extension makes is the optional Premium license check described in Section 4.</p>
+        <div class="chips" id="p-chips"><span class="chip">Runs on your device</span><span class="chip">No analytics</span><span class="chip">No account</span><span class="chip">Licence optional</span></div>
+        <p class="updated"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="p-updated">Last updated: October 2026</span></p>
+      </div>
+    </div>
+  </section>
+  <div class="wrap policy-layout">
+    <aside class="toc">
+      <p class="toc-title" id="p-toc-title">On this page</p>
+      <nav id="p-toc" aria-label="On this page">
+<a href="#section-1"><span>01</span>Data Collection</a>
+<a href="#section-2"><span>02</span>How PageShot Works</a>
+<a href="#section-3"><span>03</span>Permissions Explained</a>
+<a href="#section-4"><span>04</span>Third-Party Services &amp; License Verification</a>
+<a href="#section-5"><span>05</span>Data Sharing</a>
+<a href="#section-6"><span>06</span>Children's Privacy</a>
+<a href="#section-7"><span>07</span>Open Source</a>
+<a href="#section-8"><span>08</span>Data retention &amp; deletion</a>
+<a href="#section-9"><span>09</span>Changes to this policy</a>
+<a href="#section-10"><span>10</span>Contact</a>
+      </nav>
+    </aside>
+    <div id="p-sections">
+<article class="policy-card" id="section-1"><h2><span class="policy-num">01</span>Data Collection</h2><div class="policy-body"><p>PageShot does not collect any personal information, browsing data, screenshots, or usage analytics. We do not use cookies, tracking pixels, fingerprinting, or telemetry of any kind.</p></div></article>
+<article class="policy-card" id="section-2"><h2><span class="policy-num">02</span>How PageShot Works</h2><div class="policy-body"><p>All screenshot operations are performed entirely within your browser:</p><ul><li>Capture — Screenshots are taken using browser-native APIs (chrome.tabs.captureVisibleTab and Chrome DevTools Protocol)</li><li>Processing — Image stitching, cropping, and annotation are performed in a local Offscreen Document using the Canvas API</li><li>Storage — Screenshots are held temporarily in browser memory during processing and are immediately discarded after you copy or download them</li><li>Output — Images are saved to your local downloads folder or copied to your system clipboard</li></ul><div class="note">At no point does any data leave your browser.</div></div></article>
+<article class="policy-card" id="section-3"><h2><span class="policy-num">03</span>Permissions Explained</h2><div class="policy-body"><div class="table-wrap"><table><thead><tr><th>Permission</th><th>Purpose</th></tr></thead><tbody><tr><td><code>activeTab</code></td><td>Access the current tab when you trigger a screenshot</td></tr><tr><td><code>contextMenus</code></td><td>Add right-click menu options for capturing</td></tr><tr><td><code>downloads</code></td><td>Save screenshots to your local downloads folder</td></tr><tr><td><code>clipboardWrite</code></td><td>Copy screenshots to your system clipboard</td></tr><tr><td><code>scripting</code></td><td>Inject the selection overlay and scroll helpers on web pages</td></tr><tr><td><code>storage</code></td><td>Save your preferences (format, quality) locally</td></tr><tr><td><code>offscreen</code></td><td>Process images in a hidden background document</td></tr><tr><td><code>tabs</code></td><td>Get tab information for screenshot coordination</td></tr><tr><td><code>debugger</code></td><td>Access Chrome DevTools Protocol for full-page capture without scrolling</td></tr></tbody></table></div><div class="note">PageShot requests only the minimum permissions necessary for its functionality. The debugger permission is used solely for full-page screenshot capture via the Page.captureScreenshot CDP command. It is not used for any monitoring, debugging, or data collection purpose.</div></div></article>
+<article class="policy-card" id="section-4"><h2><span class="policy-num">04</span>Third-Party Services &amp; License Verification</h2><div class="policy-body"><p>PageShot does not connect to any third-party services, APIs, CDNs, or external servers, and screenshot handling works entirely offline. The only exception is the optional Premium license: free features make no network request at all. With a license, the extension contacts our license server (api.annmax1983.com) only to activate it, to re-verify it at most once every 2 hours when you open the extension, and to release it. These requests carry your license key, a random install identifier, and basic browser metadata (browser name/version, browser language, time zone, user agent) — never your screenshots, page content, or browsing data. Our license server records the IP address of these requests solely for rate limiting and abuse prevention — never for profiling, advertising, or sharing with third parties.</p></div></article>
+<article class="policy-card" id="section-5"><h2><span class="policy-num">05</span>Data Sharing</h2><div class="policy-body"><p>We do not share, sell, rent, or trade any data with third parties because we do not collect any data in the first place.</p></div></article>
+<article class="policy-card" id="section-6"><h2><span class="policy-num">06</span>Children's Privacy</h2><div class="policy-body"><p>PageShot does not collect any personal information from any user, including children under the age of 13.</p></div></article>
+<article class="policy-card" id="section-7"><h2><span class="policy-num">07</span>Open Source</h2><div class="policy-body"><p>PageShot's source code is available for review. You can verify that the extension behaves as described in this privacy policy.</p></div></article>
+<article class="policy-card" id="section-8"><h2><span class="policy-num">08</span>Data retention &amp; deletion</h2><div class="policy-body"><p>Your settings and content stay in your browser until you delete them in the extension or uninstall it. Uninstalling removes the extension's local data. Nothing is retained on our servers, because your content is never sent to them.</p></div></article>
+<article class="policy-card" id="section-9"><h2><span class="policy-num">09</span>Changes to this policy</h2><div class="policy-body"><p>If this policy changes, the revised version will be published on this page with a new date. Material changes will be noted in the extension's release notes.</p></div></article>
+<article class="policy-card" id="section-10"><h2><span class="policy-num">10</span>Contact</h2><div class="policy-body"><p>Questions about this policy? Email <a href="mailto:support@annmax1983.com">support@annmax1983.com</a> or open an issue on <a href="https://github.com/annmax1983/PageShot" target="_blank" rel="noopener">GitHub</a>.</p></div></article>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="icons/icon128.png" alt="" width="30" height="30">
+      <div>PageShot<span class="copy">© 2026 PageShot</span></div>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="index.html" id="p-footer-home">Home</a>
+      <a href="privacy-policy.html" id="p-footer-privacy">Privacy Policy</a>
+      <a href="https://github.com/annmax1983/PageShot" target="_blank" rel="noopener" id="p-footer-github">GitHub</a>
+      <a href="https://annmax1983.com/extensions/pageshot" target="_blank" rel="noopener" id="p-footer-site">Website</a>
+      <a href="mailto:support@annmax1983.com" id="p-footer-email">Email</a>
+    </nav>
+  </div>
+</footer>
+<script>
+const MODEL = {"langs":{"en":{"summary":"PageShot does NOT collect, store, or transmit any of your personal data. All screenshot processing happens fully locally on your device. The only network request the extension makes is the optional Premium license check described in Section 4.","sections":[{"t":"Data Collection","html":"\u003cp\u003ePageShot does not collect any personal information, browsing data, screenshots, or usage analytics. We do not use cookies, tracking pixels, fingerprinting, or telemetry of any kind.\u003c/p\u003e"},{"t":"How PageShot Works","html":"\u003cp\u003eAll screenshot operations are performed entirely within your browser:\u003c/p\u003e\u003cul\u003e\u003cli\u003eCapture — Screenshots are taken using browser-native APIs (chrome.tabs.captureVisibleTab and Chrome DevTools Protocol)\u003c/li\u003e\u003cli\u003eProcessing — Image stitching, cropping, and annotation are performed in a local Offscreen Document using the Canvas API\u003c/li\u003e\u003cli\u003eStorage — Screenshots are held temporarily in browser memory during processing and are immediately discarded after you copy or download them\u003c/li\u003e\u003cli\u003eOutput — Images are saved to your local downloads folder or copied to your system clipboard\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"note\"\u003eAt no point does any data leave your browser.\u003c/div\u003e"},{"t":"Permissions Explained","html":"\u003cdiv class=\"table-wrap\"\u003e\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003ePermission\u003c/th\u003e\u003cth\u003ePurpose\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eactiveTab\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAccess the current tab when you trigger a screenshot\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003econtextMenus\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAdd right-click menu options for capturing\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edownloads\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eSave screenshots to your local downloads folder\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eclipboardWrite\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eCopy screenshots to your system clipboard\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003escripting\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eInject the selection overlay and scroll helpers on web pages\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003estorage\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eSave your preferences (format, quality) locally\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eoffscreen\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eProcess images in a hidden background document\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003etabs\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eGet tab information for screenshot coordination\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edebugger\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAccess Chrome DevTools Protocol for full-page capture without scrolling\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"note\"\u003ePageShot requests only the minimum permissions necessary for its functionality. The debugger permission is used solely for full-page screenshot capture via the Page.captureScreenshot CDP command. It is not used for any monitoring, debugging, or data collection purpose.\u003c/div\u003e"},{"t":"Third-Party Services & License Verification","html":"\u003cp\u003ePageShot does not connect to any third-party services, APIs, CDNs, or external servers, and screenshot handling works entirely offline. The only exception is the optional Premium license: free features make no network request at all. With a license, the extension contacts our license server (api.annmax1983.com) only to activate it, to re-verify it at most once every 2 hours when you open the extension, and to release it. These requests carry your license key, a random install identifier, and basic browser metadata (browser name/version, browser language, time zone, user agent) — never your screenshots, page content, or browsing data. Our license server records the IP address of these requests solely for rate limiting and abuse prevention — never for profiling, advertising, or sharing with third parties.\u003c/p\u003e"},{"t":"Data Sharing","html":"\u003cp\u003eWe do not share, sell, rent, or trade any data with third parties because we do not collect any data in the first place.\u003c/p\u003e"},{"t":"Children's Privacy","html":"\u003cp\u003ePageShot does not collect any personal information from any user, including children under the age of 13.\u003c/p\u003e"},{"t":"Open Source","html":"\u003cp\u003ePageShot's source code is available for review. You can verify that the extension behaves as described in this privacy policy.\u003c/p\u003e"},{"t":"Data retention & deletion","html":"\u003cp\u003eYour settings and content stay in your browser until you delete them in the extension or uninstall it. Uninstalling removes the extension's local data. Nothing is retained on our servers, because your content is never sent to them.\u003c/p\u003e"},{"t":"Changes to this policy","html":"\u003cp\u003eIf this policy changes, the revised version will be published on this page with a new date. Material changes will be noted in the extension's release notes.\u003c/p\u003e"},{"t":"Contact","html":"\u003cp\u003eQuestions about this policy? Email \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e or open an issue on \u003ca href=\"https://github.com/annmax1983/PageShot\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.\u003c/p\u003e"}]},"zh":{"summary":"PageShot 不会收集、存储或传输您的任何个人数据。所有截图处理均在您的设备本地完成。扩展唯一的网络请求是第 4 节所述的可选付费授权检查。","sections":[{"t":"数据收集","html":"\u003cp\u003ePageShot 不收集任何个人信息、浏览数据、截图内容或使用分析。我们不使用 Cookie、追踪像素、浏览器指纹或任何形式的遥测。\u003c/p\u003e"},{"t":"工作原理","html":"\u003cp\u003e所有截图操作完全在您的浏览器内完成：\u003c/p\u003e\u003cul\u003e\u003cli\u003e截取 — 使用浏览器原生 API（chrome.tabs.captureVisibleTab 和 Chrome DevTools Protocol）\u003c/li\u003e\u003cli\u003e处理 — 图像拼接、裁剪和标注在本地 Offscreen Document 中通过 Canvas API 完成\u003c/li\u003e\u003cli\u003e存储 — 截图在处理期间临时保存在浏览器内存中，复制或下载后立即销毁\u003c/li\u003e\u003cli\u003e输出 — 图片保存到本地下载文件夹或复制到系统剪贴板\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"note\"\u003e在任何环节，数据都不会离开您的浏览器。\u003c/div\u003e"},{"t":"权限说明","html":"\u003cdiv class=\"table-wrap\"\u003e\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003e权限\u003c/th\u003e\u003cth\u003e用途\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eactiveTab\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e触发截图时访问当前标签页\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003econtextMenus\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e添加右键菜单截图选项\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edownloads\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e将截图保存到本地下载文件夹\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eclipboardWrite\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e将截图复制到系统剪贴板\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003escripting\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e在网页上注入选区覆盖层和滚动辅助脚本\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003estorage\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e在本地保存您的偏好设置（格式、质量）\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eoffscreen\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e在隐藏的后台文档中处理图片\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003etabs\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e获取标签页信息以协调截图\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edebugger\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e访问 Chrome DevTools Protocol 实现全页截图（无需滚动）\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"note\"\u003ePageShot 仅请求功能所必需的最低权限。debugger 权限仅用于通过 Page.captureScreenshot CDP 命令实现全页截图，不用于任何监控、调试或数据收集。\u003c/div\u003e"},{"t":"第三方服务与授权验证","html":"\u003cp\u003ePageShot 不连接任何第三方服务、API、CDN 或外部服务器，截图处理完全离线运行。唯一的例外是可选的付费授权：免费功能不发起任何网络请求。激活授权后，扩展仅联系授权服务器（api.annmax1983.com）完成激活、复验（打开扩展时每 2 小时最多一次）与解绑。这些请求仅携带授权密钥、随机安装标识和基础浏览器元数据（浏览器名称/版本、浏览器语言、时区、User-Agent），绝不包含您的截图、页面内容或浏览数据。 授权服务器会记录这些请求的 IP 地址，仅用于限速与防滥用，不用于画像或广告，也不会共享给第三方。\u003c/p\u003e"},{"t":"数据共享","html":"\u003cp\u003e我们不会与第三方共享、出售、出租或交易任何数据，因为我们根本不收集任何数据。\u003c/p\u003e"},{"t":"儿童隐私","html":"\u003cp\u003ePageShot 不收集任何用户的个人信息，包括 13 岁以下的儿童。\u003c/p\u003e"},{"t":"开源","html":"\u003cp\u003ePageShot 的源代码可供审查。您可以验证扩展的行为是否与此隐私政策描述一致。\u003c/p\u003e"},{"t":"数据保留与删除","html":"\u003cp\u003e你的设置和内容保存在浏览器中，直到你在扩展内删除它们或卸载扩展。卸载会清除扩展的本地数据。我们的服务器不保留任何内容，因为你的内容从不会发送到那里。\u003c/p\u003e"},{"t":"政策变更","html":"\u003cp\u003e如果本政策发生变更，修订后的版本会发布在本页并更新日期。重要变更会在扩展的版本说明中注明。\u003c/p\u003e"},{"t":"联系我们","html":"\u003cp\u003e对本政策有疑问？请发邮件至 \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e，或在 \u003ca href=\"https://github.com/annmax1983/PageShot\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e 提交 issue。\u003c/p\u003e"}]},"ja":{"summary":"PageShot は個人データを収集、保存、送信しません。すべてのスクリーンショット処理はデバイス上で完全ローカルで行われます。唯一のネットワーク通信は、セクション4に記載の任意のプレミアムライセンス確認です。","sections":[{"t":"データ収集","html":"\u003cp\u003ePageShot は個人情報、閲覧データ、スクリーンショット、使用分析を収集しません。Cookie、トラッキングピクセル、フィンガープリント、テレメトリは一切使用しません。\u003c/p\u003e"},{"t":"仕組み","html":"\u003cp\u003eすべてのスクリーンショット操作はブラウザ内で完結します：\u003c/p\u003e\u003cul\u003e\u003cli\u003eキャプチャ — ブラウザネイティブ API（chrome.tabs.captureVisibleTab および Chrome DevTools Protocol）を使用\u003c/li\u003e\u003cli\u003e処理 — 画像の結合、トリミング、アノテーションはローカルの Offscreen Document で Canvas API を使用して実行\u003c/li\u003e\u003cli\u003e保存 — スクリーンショットは処理中にブラウザメモリに一時保存され、コピーまたはダウンロード後に即座に破棄\u003c/li\u003e\u003cli\u003e出力 — 画像はローカルのダウンロードフォルダに保存またはシステムクリップボードにコピー\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"note\"\u003eデータがブラウザから離れることは一切ありません。\u003c/div\u003e"},{"t":"権限の説明","html":"\u003cdiv class=\"table-wrap\"\u003e\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003e権限\u003c/th\u003e\u003cth\u003e目的\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eactiveTab\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eスクリーンショット実行時に現在のタブにアクセス\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003econtextMenus\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e右クリックメニューにキャプチャオプションを追加\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edownloads\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eスクリーンショットをローカルのダウンロードフォルダに保存\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eclipboardWrite\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eスクリーンショットをシステムクリップボードにコピー\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003escripting\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eウェブページに選択オーバーレイとスクロールヘルパーを注入\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003estorage\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e設定（フォーマット、品質）をローカルに保存\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eoffscreen\u003c/code\u003e\u003c/td\u003e\u003ctd\u003e非表示のバックグラウンドドキュメントで画像を処理\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003etabs\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eスクリーンショットの調整にタブ情報を取得\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edebugger\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eスクロールなしの全ページキャプチャ用に Chrome DevTools Protocol にアクセス\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"note\"\u003ePageShot は機能に必要な最小限の権限のみを要求します。debugger 権限は Page.captureScreenshot CDP コマンドによる全ページキャプチャにのみ使用され、監視、デバッグ、データ収集には使用されません。\u003c/div\u003e"},{"t":"サードパーティサービスとライセンス検証","html":"\u003cp\u003ePageShot はサードパーティサービス、API、CDN、外部サーバーに接続しません。スクリーンショット処理は完全にオフラインで動作します。唯一の例外は任意のプレミアムライセンスです：無料機能は一切ネットワーク通信を行いません。ライセンスがある場合、拡張機能はライセンスサーバー（api.annmax1983.com）にのみ接続し、有効化・再確認（拡張機能を開いたとき、2時間に最大1回）・解除を行います。これらの通信に含まれるのはライセンスキー、ランダムなインストール識別子、基本的なブラウザーメタデータ（ブラウザー名/バージョン、言語、タイムゾーン、User-Agent）のみで、スクリーンショットやページ内容、閲覧データは含まれません。 ライセンスサーバーはこれらのリクエストの IP アドレスを、レート制限と不正利用防止のみを目的として記録します。プロファイリング、広告、第三者提供には一切使用しません。\u003c/p\u003e"},{"t":"データ共有","html":"\u003cp\u003eデータを収集しないため、第三者とデータを共有、販売、貸与、取引することはありません。\u003c/p\u003e"},{"t":"子供のプライバシー","html":"\u003cp\u003ePageShot は13歳未満の子供を含む、すべてのユーザーの個人情報を収集しません。\u003c/p\u003e"},{"t":"オープンソース","html":"\u003cp\u003ePageShot のソースコードは公開されており、このプライバシーポリシーに記載されているとおりに動作することを確認できます。\u003c/p\u003e"},{"t":"データの保存期間と削除","html":"\u003cp\u003e設定とコンテンツは、拡張機能内で削除するかアンインストールするまでブラウザに保存されます。アンインストールすると拡張機能のローカルデータは削除されます。コンテンツがサーバーへ送信されることはないため、当方のサーバーには何も保持されません。\u003c/p\u003e"},{"t":"ポリシーの変更","html":"\u003cp\u003eこのポリシーを変更する場合は、改訂版をこのページに新しい日付で掲載します。重要な変更は拡張機能のリリースノートにも記載します。\u003c/p\u003e"},{"t":"お問い合わせ","html":"\u003cp\u003eこのポリシーについてのご質問は、\u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e へメールするか、\u003ca href=\"https://github.com/annmax1983/PageShot\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e で issue を作成してください。\u003c/p\u003e"}]},"de":{"summary":"PageShot sammelt, speichert oder überträgt KEINE persönlichen Daten. Alle Screenshot-Verarbeitung erfolgt lokal auf Ihrem Gerät. Die einzige Netzwerkanfrage ist die optionale Premium-Lizenzprüfung (siehe Abschnitt 4).","sections":[{"t":"Datenerfassung","html":"\u003cp\u003ePageShot erfasst keine persönlichen Informationen, Browsdaten, Screenshots oder Nutzungsanalysen. Wir verwenden keine Cookies, Tracking-Pixel, Fingerprints oder Telemetrie.\u003c/p\u003e"},{"t":"So funktioniert PageShot","html":"\u003cp\u003eAlle Screenshot-Operationen werden vollständig in Ihrem Browser durchgeführt:\u003c/p\u003e\u003cul\u003e\u003cli\u003eErfassung — Screenshots werden mit browsernativen APIs aufgenommen (chrome.tabs.captureVisibleTab und Chrome DevTools Protocol)\u003c/li\u003e\u003cli\u003eVerarbeitung — Bildzuschnitt, Zuschneidung und Annotation erfolgen in einem lokalen Offscreen Document mit der Canvas API\u003c/li\u003e\u003cli\u003eSpeicherung — Screenshots werden während der Verarbeitung temporär im Browser-Speicher gehalten und nach dem Kopieren oder Herunterladen sofort gelöscht\u003c/li\u003e\u003cli\u003eAusgabe — Bilder werden in Ihren lokalen Download-Ordner gespeichert oder in die Zwischenablage kopiert\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"note\"\u003eZu keinem Zeitpunkt verlassen Daten Ihren Browser.\u003c/div\u003e"},{"t":"Berechtigungen erklärt","html":"\u003cdiv class=\"table-wrap\"\u003e\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eBerechtigung\u003c/th\u003e\u003cth\u003eZweck\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eactiveTab\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eZugriff auf die aktuelle Registerkarte bei Screenshot-Auslösung\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003econtextMenus\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eRechtsklick-Menüoptionen für Erfassung hinzufügen\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edownloads\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eScreenshots im lokalen Download-Ordner speichern\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eclipboardWrite\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eScreenshots in die System-Zwischenablage kopieren\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003escripting\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAuswahl-Overlay und Scroll-Hilfen auf Webseiten einfügen\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003estorage\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eEinstellungen (Format, Qualität) lokal speichern\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eoffscreen\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eBilder in einem versteckten Hintergrunddokument verarbeiten\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003etabs\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eTab-Informationen für Screenshot-Koordination abrufen\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edebugger\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eZugriff auf Chrome DevTools Protocol für Ganzseiten-Erfassung ohne Scrollen\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"note\"\u003ePageShot fordert nur die für seine Funktionalität erforderlichen Mindestberechtigungen an. Die debugger-Berechtigung wird ausschließlich für die Ganzseiten-Screenshot-Erfassung über den Page.captureScreenshot CDP-Befehl verwendet. Sie wird nicht für Überwachung, Debugging oder Datenerfassung verwendet.\u003c/div\u003e"},{"t":"Drittanbieterdienste und Lizenzprüfung","html":"\u003cp\u003ePageShot verbindet sich nicht mit Drittanbieterdiensten, APIs, CDNs oder externen Servern. Die Screenshot-Verarbeitung läuft vollständig offline. Die einzige Ausnahme ist die optionale Premium-Lizenz: Kostenlose Funktionen senden keine Netzwerkanfrage. Mit einer Lizenz kontaktiert die Erweiterung unseren Lizenzserver (api.annmax1983.com) ausschließlich zum Aktivieren, zum Nachprüfen (höchstens einmal alle 2 Stunden beim Öffnen der Erweiterung) und zum Freigeben. Diese Anfragen enthalten den Lizenzschlüssel, eine zufällige Installationskennung und grundlegende Browser-Metadaten (Browser-Name/-Version, Browsersprache, Zeitzone, User-Agent) — niemals Ihre Screenshots, Seiteninhalte oder Browsdaten. Unser Lizenzserver protokolliert die IP-Adresse dieser Anfragen ausschließlich zur Ratenbegrenzung und Missbrauchsabwehr – niemals für Profiling, Werbung oder Weitergabe an Dritte.\u003c/p\u003e"},{"t":"Datenweitergabe","html":"\u003cp\u003eWir geben keine Daten weiter, verkaufen, vermieten oder handeln mit Dritten, da wir überhaupt keine Daten erheben.\u003c/p\u003e"},{"t":"Datenschutz von Kindern","html":"\u003cp\u003ePageShot erfasst keine persönlichen Informationen von Nutzern, einschließlich Kindern unter 13 Jahren.\u003c/p\u003e"},{"t":"Open Source","html":"\u003cp\u003eDer Quellcode von PageShot ist öffentlich einsehbar. Sie können überprüfen, dass sich die Erweiterung wie in dieser Datenschutzrichtlinie beschrieben verhält.\u003c/p\u003e"},{"t":"Aufbewahrung und Löschung","html":"\u003cp\u003eDeine Einstellungen und Inhalte bleiben im Browser, bis du sie in der Erweiterung löschst oder sie deinstallierst. Beim Deinstallieren werden die lokalen Daten der Erweiterung entfernt. Auf unseren Servern wird nichts aufbewahrt, weil deine Inhalte nie dorthin gesendet werden.\u003c/p\u003e"},{"t":"Änderungen dieser Erklärung","html":"\u003cp\u003eWenn sich diese Erklärung ändert, wird die überarbeitete Fassung mit einem neuen Datum auf dieser Seite veröffentlicht. Wesentliche Änderungen werden in den Versionshinweisen der Erweiterung genannt.\u003c/p\u003e"},{"t":"Kontakt","html":"\u003cp\u003eFragen zu dieser Erklärung? Schreib an \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e oder öffne ein Issue auf \u003ca href=\"https://github.com/annmax1983/PageShot\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.\u003c/p\u003e"}]},"es":{"summary":"PageShot NO recopila, almacena ni transmite ningún dato personal. Todo el procesamiento de capturas ocurre localmente en su dispositivo. La única solicitud de red es la verificación opcional de la licencia Premium (véase la sección 4).","sections":[{"t":"Recopilación de Datos","html":"\u003cp\u003ePageShot no recopila información personal, datos de navegación, capturas de pantalla ni analíticas de uso. No utilizamos cookies, píxeles de seguimiento, huellas digitales ni telemetría.\u003c/p\u003e"},{"t":"Cómo Funciona PageShot","html":"\u003cp\u003eTodas las operaciones de captura se realizan completamente dentro de su navegador:\u003c/p\u003e\u003cul\u003e\u003cli\u003eCaptura — Las capturas se toman usando APIs nativas del navegador (chrome.tabs.captureVisibleTab y Chrome DevTools Protocol)\u003c/li\u003e\u003cli\u003eProcesamiento — La unión, recorte y anotación de imágenes se realiza en un Offscreen Document local usando la API Canvas\u003c/li\u003e\u003cli\u003eAlmacenamiento — Las capturas se mantienen temporalmente en la memoria del navegador durante el procesamiento y se descartan inmediatamente después de copiarlas o descargarlas\u003c/li\u003e\u003cli\u003eSalida — Las imágenes se guardan en su carpeta de descargas local o se copian al portapapeles del sistema\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"note\"\u003eEn ningún momento los datos salen de su navegador.\u003c/div\u003e"},{"t":"Permisos Explicados","html":"\u003cdiv class=\"table-wrap\"\u003e\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003ePermiso\u003c/th\u003e\u003cth\u003ePropósito\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eactiveTab\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAcceder a la pestaña actual al activar una captura\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003econtextMenus\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAgregar opciones de captura en el menú clic derecho\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edownloads\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eGuardar capturas en la carpeta de descargas local\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eclipboardWrite\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eCopiar capturas al portapapeles del sistema\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003escripting\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eInyectar la superposición de selección y ayudantes de desplazamiento en páginas web\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003estorage\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eGuardar sus preferencias (formato, calidad) localmente\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eoffscreen\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eProcesar imágenes en un documento de fondo oculto\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003etabs\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eObtener información de pestañas para la coordinación de capturas\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edebugger\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAcceder a Chrome DevTools Protocol para captura de página completa sin desplazamiento\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"note\"\u003ePageShot solicita solo los permisos mínimos necesarios para su funcionalidad. El permiso de debugger se utiliza únicamente para la captura de página completa mediante el comando CDP Page.captureScreenshot. No se usa para ningún propósito de monitoreo, depuración o recopilación de datos.\u003c/div\u003e"},{"t":"Servicios de Terceros y Verificación de Licencia","html":"\u003cp\u003ePageShot no se conecta a servicios de terceros, APIs, CDNs ni servidores externos. El procesamiento de capturas funciona completamente sin conexión. La única excepción es la licencia Premium opcional: las funciones gratuitas no realizan ninguna petición de red. Con una licencia, la extensión contacta con nuestro servidor de licencias (api.annmax1983.com) solo para activarla, reverificarla (como máximo una vez cada 2 horas al abrir la extensión) y liberarla. Esas peticiones incluyen tu clave de licencia, un identificador de instalación aleatorio y metadatos básicos del navegador (nombre/versión, idioma, zona horaria, User-Agent) — nunca tus capturas, el contenido de las páginas ni los datos de navegación. Nuestro servidor de licencias registra la dirección IP de estas solicitudes únicamente para limitar la tasa de peticiones y evitar abusos; nunca para elaborar perfiles, publicidad ni compartirla con terceros.\u003c/p\u003e"},{"t":"Compartición de Datos","html":"\u003cp\u003eNo compartimos, vendemos, alquilamos ni intercambiamos datos con terceros porque no recopilamos ningún dato en primer lugar.\u003c/p\u003e"},{"t":"Privacidad de Menores","html":"\u003cp\u003ePageShot no recopila información personal de ningún usuario, incluidos menores de 13 años.\u003c/p\u003e"},{"t":"Código Abierto","html":"\u003cp\u003eEl código fuente de PageShot está disponible para revisión. Puede verificar que la extensión se comporta como se describe en esta política de privacidad.\u003c/p\u003e"},{"t":"Conservación y eliminación de datos","html":"\u003cp\u003eTus ajustes y contenidos permanecen en el navegador hasta que los elimines en la extensión o la desinstales. Al desinstalarla se borran los datos locales de la extensión. No conservamos nada en nuestros servidores porque tus contenidos nunca se envían allí.\u003c/p\u003e"},{"t":"Cambios en esta política","html":"\u003cp\u003eSi esta política cambia, la versión revisada se publicará en esta página con una nueva fecha. Los cambios importantes se indicarán en las notas de la versión de la extensión.\u003c/p\u003e"},{"t":"Contacto","html":"\u003cp\u003e¿Preguntas sobre esta política? Escribe a \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e o abre un issue en \u003ca href=\"https://github.com/annmax1983/PageShot\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.\u003c/p\u003e"}]},"fr":{"summary":"PageShot ne collecte, ne stocke ni ne transmet aucune donnée personnelle. Tout le traitement des captures d'écran se fait localement sur votre appareil. La seule requête réseau est la vérification facultative de la licence Premium (voir section 4).","sections":[{"t":"Collecte de Données","html":"\u003cp\u003ePageShot ne collecte aucune information personnelle, données de navigation, captures d'écran ou analyses d'utilisation. Nous n'utilisons pas de cookies, pixels de traçage, empreintes digitales ou télémétrie.\u003c/p\u003e"},{"t":"Comment Fonctionne PageShot","html":"\u003cp\u003eToutes les opérations de capture sont effectuées entièrement dans votre navigateur :\u003c/p\u003e\u003cul\u003e\u003cli\u003eCapture — Les captures sont prises avec des API natives du navigateur (chrome.tabs.captureVisibleTab et Chrome DevTools Protocol)\u003c/li\u003e\u003cli\u003eTraitement — L'assemblage, le recadrage et l'annotation des images sont effectués dans un Offscreen Document local avec l'API Canvas\u003c/li\u003e\u003cli\u003eStockage — Les captures sont temporairement conservées en mémoire pendant le traitement et supprimées immédiatement après copie ou téléchargement\u003c/li\u003e\u003cli\u003eSortie — Les images sont enregistrées dans votre dossier de téléchargement local ou copiées dans le presse-papiers système\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"note\"\u003eÀ aucun moment les données ne quittent votre navigateur.\u003c/div\u003e"},{"t":"Permissions Expliquées","html":"\u003cdiv class=\"table-wrap\"\u003e\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003ePermission\u003c/th\u003e\u003cth\u003eBut\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eactiveTab\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAccéder à l'onglet actuel lors du déclenchement d'une capture\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003econtextMenus\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAjouter des options de capture dans le menu clic droit\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edownloads\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eEnregistrer les captures dans le dossier de téléchargement local\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eclipboardWrite\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eCopier les captures dans le presse-papiers système\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003escripting\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eInjecter la superposition de sélection et les aides de défilement sur les pages web\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003estorage\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eEnregistrer vos préférences (format, qualité) localement\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003eoffscreen\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eTraiter les images dans un document d'arrière-plan caché\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003etabs\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eObtenir les informations des onglets pour la coordination des captures\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edebugger\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eAccéder à Chrome DevTools Protocol pour la capture de page complète sans défilement\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\u003cdiv class=\"note\"\u003ePageShot ne demande que les permissions minimales nécessaires à son fonctionnement. La permission debugger est utilisée uniquement pour la capture de page complète via la commande CDP Page.captureScreenshot. Elle n'est utilisée à aucune fin de surveillance, de débogage ou de collecte de données.\u003c/div\u003e"},{"t":"Services Tiers et Vérification de Licence","html":"\u003cp\u003ePageShot ne se connecte à aucun service tiers, API, CDN ou serveur externe. Le traitement des captures fonctionne entièrement hors ligne. La seule exception est la licence Premium facultative : les fonctions gratuites n'émettent aucune requête réseau. Avec une licence, l'extension contacte notre serveur de licences (api.annmax1983.com) uniquement pour l'activer, la revérifier (au plus une fois toutes les 2 heures à l'ouverture de l'extension) et la libérer. Ces requêtes contiennent votre clé de licence, un identifiant d'installation aléatoire et des métadonnées navigateur de base (nom/version, langue, fuseau horaire, User-Agent) — jamais vos captures, le contenu des pages ni vos données de navigation. Notre serveur de licences enregistre l'adresse IP de ces requêtes uniquement pour limiter le débit et prévenir les abus — jamais pour du profilage, de la publicité ou un partage avec des tiers.\u003c/p\u003e"},{"t":"Partage de Données","html":"\u003cp\u003eNous ne partageons, vendons, louons ni échangeons de données avec des tiers car nous ne collectons aucune donnée.\u003c/p\u003e"},{"t":"Confidentialité des Enfants","html":"\u003cp\u003ePageShot ne collecte aucune information personnelle d'un utilisateur, y compris les enfants de moins de 13 ans.\u003c/p\u003e"},{"t":"Open Source","html":"\u003cp\u003eLe code source de PageShot est disponible pour examen. Vous pouvez vérifier que l'extension se comporte comme décrit dans cette politique de confidentialité.\u003c/p\u003e"},{"t":"Conservation et suppression des données","html":"\u003cp\u003eVos réglages et contenus restent dans le navigateur jusqu'à ce que vous les supprimiez dans l'extension ou que vous la désinstalliez. La désinstallation efface les données locales de l'extension. Rien n'est conservé sur nos serveurs, car vos contenus ne leur sont jamais envoyés.\u003c/p\u003e"},{"t":"Modifications de cette politique","html":"\u003cp\u003eSi cette politique change, la version révisée sera publiée sur cette page avec une nouvelle date. Les changements importants seront signalés dans les notes de version de l'extension.\u003c/p\u003e"},{"t":"Contact","html":"\u003cp\u003eDes questions sur cette politique ? Écrivez à \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e ou ouvrez un ticket sur \u003ca href=\"https://github.com/annmax1983/PageShot\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.\u003c/p\u003e"}]}},"staticOnly":false};
+const UI_ALL = {"en":{"privacyTitle":"Privacy Policy","home":"Home","onThisPage":"On this page","lastUpdated":"Last updated: October 2026","chips":["Runs on your device","No analytics","No account","Licence optional"],"permissionsTitle":"Permissions","permissionsIntro":"The extension requests only these permissions:","retentionTitle":"Data retention & deletion","retentionBody":"Your settings and content stay in your browser until you delete them in the extension or uninstall it. Uninstalling removes the extension's local data. Nothing is retained on our servers, because your content is never sent to them.","syncCaveat":"If you enabled a feature that uses your browser account's sync, a copy may remain in that account. You can manage or remove it in your browser's sync settings.","changesTitle":"Changes to this policy","changesBody":"If this policy changes, the revised version will be published on this page with a new date. Material changes will be noted in the extension's release notes.","contactTitle":"Contact","contactBody":"Questions about this policy? Email \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e or open an issue on \u003ca href=\"{github}\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.","footerHome":"Home","footerGithub":"GitHub","footerSite":"Website","footerEmail":"Email","index":{"navFeatures":"Features","navPlans":"Free & Premium","navPrivacy":"Privacy","navSupport":"Support","eyebrow":"Chrome & Edge extension","badgeFree":"Free + Premium","badgeLocal":"Runs locally","badgeNoTrack":"No tracking","badgeBrowsers":"Chrome & Edge","ctaGet":"Get the extension","ctaPrivacy":"Privacy policy","ctaSource":"View source","featuresTitle":"Everything it does","featuresLead":"The core features at a glance.","moreTitle":"Also included","proLabel":"Premium","freeLabel":"Free","premiumLabel":"Premium","planTitle":"Free vs Premium","planLead":"The free tier is a complete tool, not a trial. Premium is optional.","privacyTitle":"Private by design","privacyLead":"Your data stays on your device. No account, no analytics, no tracking. Read exactly what is stored and when the extension uses the network.","privacyPoints":["Local processing","No account","Optional licence"],"privacyCta":"Read the privacy policy","supportEyebrow":"Support the developer","supportHint":"If this extension helps you, you can buy me a coffee.","footerMore":"More extensions","footerPrivacy":"Privacy","footerGithub":"GitHub","footerSite":"Website"}},"zh":{"privacyTitle":"隐私政策","home":"首页","onThisPage":"本页目录","lastUpdated":"最后更新：2026 年 10 月","chips":["在你的设备上运行","无统计追踪","无需账号","授权可选"],"permissionsTitle":"权限说明","permissionsIntro":"扩展只请求以下权限：","retentionTitle":"数据保留与删除","retentionBody":"你的设置和内容保存在浏览器中，直到你在扩展内删除它们或卸载扩展。卸载会清除扩展的本地数据。我们的服务器不保留任何内容，因为你的内容从不会发送到那里。","syncCaveat":"如果你启用了使用浏览器账号同步的功能，该账号中可能保留一份副本，可在浏览器的同步设置中管理或删除。","changesTitle":"政策变更","changesBody":"如果本政策发生变更，修订后的版本会发布在本页并更新日期。重要变更会在扩展的版本说明中注明。","contactTitle":"联系我们","contactBody":"对本政策有疑问？请发邮件至 \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e，或在 \u003ca href=\"{github}\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e 提交 issue。","footerHome":"首页","footerGithub":"GitHub","footerSite":"官网","footerEmail":"邮件","index":{"navFeatures":"功能","navPlans":"免费与高级版","navPrivacy":"隐私","navSupport":"支持","eyebrow":"Chrome 与 Edge 扩展","badgeFree":"免费 + 高级版","badgeLocal":"本地运行","badgeNoTrack":"无追踪","badgeBrowsers":"Chrome 与 Edge","ctaGet":"获取扩展","ctaPrivacy":"隐私政策","ctaSource":"查看源码","featuresTitle":"全部功能","featuresLead":"核心功能一览。","moreTitle":"还包括","proLabel":"高级版","freeLabel":"免费版","premiumLabel":"高级版","planTitle":"免费版与高级版","planLead":"免费版是完整工具，不是试用版。高级功能完全可选。","privacyTitle":"隐私优先","privacyLead":"你的数据留在设备上。无需账号，没有统计，没有追踪。了解具体存储了什么，以及扩展何时联网。","privacyPoints":["本地处理","无需账号","授权可选"],"privacyCta":"阅读隐私政策","supportEyebrow":"支持开发者","supportHint":"如果这个扩展对你有帮助，可以请我喝杯咖啡。","footerMore":"更多扩展","footerPrivacy":"隐私","footerGithub":"GitHub","footerSite":"官网"}},"ja":{"privacyTitle":"プライバシーポリシー","home":"ホーム","onThisPage":"目次","lastUpdated":"最終更新：2026年10月","chips":["端末上で動作","分析なし","アカウント不要","ライセンスは任意"],"permissionsTitle":"権限","permissionsIntro":"この拡張機能が要求する権限は次のとおりです：","retentionTitle":"データの保存期間と削除","retentionBody":"設定とコンテンツは、拡張機能内で削除するかアンインストールするまでブラウザに保存されます。アンインストールすると拡張機能のローカルデータは削除されます。コンテンツがサーバーへ送信されることはないため、当方のサーバーには何も保持されません。","syncCaveat":"ブラウザのアカウント同期を使う機能を有効にした場合、そのアカウントにコピーが残ることがあります。ブラウザの同期設定から管理・削除できます。","changesTitle":"ポリシーの変更","changesBody":"このポリシーを変更する場合は、改訂版をこのページに新しい日付で掲載します。重要な変更は拡張機能のリリースノートにも記載します。","contactTitle":"お問い合わせ","contactBody":"このポリシーについてのご質問は、\u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e へメールするか、\u003ca href=\"{github}\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e で issue を作成してください。","footerHome":"ホーム","footerGithub":"GitHub","footerSite":"公式サイト","footerEmail":"メール","index":{"navFeatures":"機能","navPlans":"無料とPremium","navPrivacy":"プライバシー","navSupport":"サポート","eyebrow":"Chrome & Edge 拡張機能","badgeFree":"無料 + Premium","badgeLocal":"端末上で動作","badgeNoTrack":"トラッキングなし","badgeBrowsers":"Chrome & Edge","ctaGet":"拡張機能を入手","ctaPrivacy":"プライバシーポリシー","ctaSource":"ソースを見る","featuresTitle":"すべての機能","featuresLead":"主な機能を一覧で。","moreTitle":"その他の機能","proLabel":"Premium","freeLabel":"無料版","premiumLabel":"Premium","planTitle":"無料版とPremium","planLead":"無料版は試用版ではなく、完成したツールです。Premium は任意です。","privacyTitle":"プライバシー優先","privacyLead":"データは端末上に残ります。アカウント、分析、トラッキングはありません。何が保存され、いつ通信するかを確認できます。","privacyPoints":["端末内で処理","アカウント不要","ライセンスは任意"],"privacyCta":"プライバシーポリシーを読む","supportEyebrow":"開発者を支援","supportHint":"この拡張機能が役に立ったら、コーヒーをごちそうしてください。","footerMore":"他の拡張機能","footerPrivacy":"プライバシー","footerGithub":"GitHub","footerSite":"公式サイト"}},"de":{"privacyTitle":"Datenschutzerklärung","home":"Startseite","onThisPage":"Auf dieser Seite","lastUpdated":"Zuletzt aktualisiert: Oktober 2026","chips":["Läuft auf deinem Gerät","Keine Analyse","Kein Konto","Lizenz optional"],"permissionsTitle":"Berechtigungen","permissionsIntro":"Die Erweiterung fordert nur diese Berechtigungen an:","retentionTitle":"Aufbewahrung und Löschung","retentionBody":"Deine Einstellungen und Inhalte bleiben im Browser, bis du sie in der Erweiterung löschst oder sie deinstallierst. Beim Deinstallieren werden die lokalen Daten der Erweiterung entfernt. Auf unseren Servern wird nichts aufbewahrt, weil deine Inhalte nie dorthin gesendet werden.","syncCaveat":"Wenn du eine Funktion mit der Kontosynchronisierung deines Browsers aktiviert hast, kann eine Kopie in diesem Konto verbleiben. Du kannst sie in den Synchronisierungseinstellungen deines Browsers verwalten oder löschen.","changesTitle":"Änderungen dieser Erklärung","changesBody":"Wenn sich diese Erklärung ändert, wird die überarbeitete Fassung mit einem neuen Datum auf dieser Seite veröffentlicht. Wesentliche Änderungen werden in den Versionshinweisen der Erweiterung genannt.","contactTitle":"Kontakt","contactBody":"Fragen zu dieser Erklärung? Schreib an \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e oder öffne ein Issue auf \u003ca href=\"{github}\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.","footerHome":"Startseite","footerGithub":"GitHub","footerSite":"Website","footerEmail":"E-Mail","index":{"navFeatures":"Funktionen","navPlans":"Free & Premium","navPrivacy":"Datenschutz","navSupport":"Support","eyebrow":"Chrome- und Edge-Erweiterung","badgeFree":"Free + Premium","badgeLocal":"Läuft lokal","badgeNoTrack":"Kein Tracking","badgeBrowsers":"Chrome & Edge","ctaGet":"Erweiterung holen","ctaPrivacy":"Datenschutzerklärung","ctaSource":"Quellcode ansehen","featuresTitle":"Alle Funktionen","featuresLead":"Die wichtigsten Funktionen im Überblick.","moreTitle":"Außerdem","proLabel":"Premium","freeLabel":"Free","premiumLabel":"Premium","planTitle":"Free vs. Premium","planLead":"Die kostenlose Version ist ein vollständiges Werkzeug, keine Testversion. Premium ist optional.","privacyTitle":"Privat by Design","privacyLead":"Deine Daten bleiben auf deinem Gerät. Kein Konto, keine Analyse, kein Tracking. Lies genau, was gespeichert wird und wann die Erweiterung das Netz nutzt.","privacyPoints":["Lokale Verarbeitung","Kein Konto","Lizenz optional"],"privacyCta":"Datenschutzerklärung lesen","supportEyebrow":"Unterstütze die Entwicklung","supportHint":"Wenn dir die Erweiterung hilft, spendier mir einen Kaffee.","footerMore":"Weitere Erweiterungen","footerPrivacy":"Datenschutz","footerGithub":"GitHub","footerSite":"Website"}},"es":{"privacyTitle":"Política de privacidad","home":"Inicio","onThisPage":"En esta página","lastUpdated":"Última actualización: octubre de 2026","chips":["Se ejecuta en tu dispositivo","Sin analíticas","Sin cuenta","Licencia opcional"],"permissionsTitle":"Permisos","permissionsIntro":"La extensión solo solicita estos permisos:","retentionTitle":"Conservación y eliminación de datos","retentionBody":"Tus ajustes y contenidos permanecen en el navegador hasta que los elimines en la extensión o la desinstales. Al desinstalarla se borran los datos locales de la extensión. No conservamos nada en nuestros servidores porque tus contenidos nunca se envían allí.","syncCaveat":"Si activaste una función que usa la sincronización de la cuenta del navegador, puede quedar una copia en esa cuenta. Puedes gestionarla o eliminarla en los ajustes de sincronización del navegador.","changesTitle":"Cambios en esta política","changesBody":"Si esta política cambia, la versión revisada se publicará en esta página con una nueva fecha. Los cambios importantes se indicarán en las notas de la versión de la extensión.","contactTitle":"Contacto","contactBody":"¿Preguntas sobre esta política? Escribe a \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e o abre un issue en \u003ca href=\"{github}\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.","footerHome":"Inicio","footerGithub":"GitHub","footerSite":"Sitio web","footerEmail":"Correo","index":{"navFeatures":"Funciones","navPlans":"Gratis y Premium","navPrivacy":"Privacidad","navSupport":"Apoyo","eyebrow":"Extensión para Chrome y Edge","badgeFree":"Gratis + Premium","badgeLocal":"Se ejecuta en local","badgeNoTrack":"Sin rastreo","badgeBrowsers":"Chrome y Edge","ctaGet":"Obtener la extensión","ctaPrivacy":"Política de privacidad","ctaSource":"Ver el código","featuresTitle":"Todo lo que hace","featuresLead":"Las funciones principales de un vistazo.","moreTitle":"También incluye","proLabel":"Premium","freeLabel":"Gratis","premiumLabel":"Premium","planTitle":"Gratis vs Premium","planLead":"La versión gratuita es una herramienta completa, no una prueba. Premium es opcional.","privacyTitle":"Privacidad por diseño","privacyLead":"Tus datos se quedan en tu dispositivo. Sin cuenta, sin analíticas y sin rastreo. Consulta qué se guarda y cuándo usa la red la extensión.","privacyPoints":["Procesamiento local","Sin cuenta","Licencia opcional"],"privacyCta":"Leer la política de privacidad","supportEyebrow":"Apoya al desarrollador","supportHint":"Si la extensión te resulta útil, invítame a un café.","footerMore":"Más extensiones","footerPrivacy":"Privacidad","footerGithub":"GitHub","footerSite":"Sitio web"}},"fr":{"privacyTitle":"Politique de confidentialité","home":"Accueil","onThisPage":"Sur cette page","lastUpdated":"Dernière mise à jour : octobre 2026","chips":["Fonctionne sur votre appareil","Aucune analyse","Sans compte","Licence facultative"],"permissionsTitle":"Autorisations","permissionsIntro":"L'extension ne demande que ces autorisations :","retentionTitle":"Conservation et suppression des données","retentionBody":"Vos réglages et contenus restent dans le navigateur jusqu'à ce que vous les supprimiez dans l'extension ou que vous la désinstalliez. La désinstallation efface les données locales de l'extension. Rien n'est conservé sur nos serveurs, car vos contenus ne leur sont jamais envoyés.","syncCaveat":"Si vous avez activé une fonction qui utilise la synchronisation du compte de votre navigateur, une copie peut subsister dans ce compte. Vous pouvez la gérer ou la supprimer dans les réglages de synchronisation du navigateur.","changesTitle":"Modifications de cette politique","changesBody":"Si cette politique change, la version révisée sera publiée sur cette page avec une nouvelle date. Les changements importants seront signalés dans les notes de version de l'extension.","contactTitle":"Contact","contactBody":"Des questions sur cette politique ? Écrivez à \u003ca href=\"mailto:support@annmax1983.com\"\u003esupport@annmax1983.com\u003c/a\u003e ou ouvrez un ticket sur \u003ca href=\"{github}\" target=\"_blank\" rel=\"noopener\"\u003eGitHub\u003c/a\u003e.","footerHome":"Accueil","footerGithub":"GitHub","footerSite":"Site web","footerEmail":"E-mail","index":{"navFeatures":"Fonctionnalités","navPlans":"Gratuit et Premium","navPrivacy":"Confidentialité","navSupport":"Soutien","eyebrow":"Extension Chrome et Edge","badgeFree":"Gratuit + Premium","badgeLocal":"Fonctionne en local","badgeNoTrack":"Aucun suivi","badgeBrowsers":"Chrome et Edge","ctaGet":"Obtenir l’extension","ctaPrivacy":"Politique de confidentialité","ctaSource":"Voir le code","featuresTitle":"Toutes les fonctionnalités","featuresLead":"Les fonctions essentielles en un coup d'œil.","moreTitle":"Également inclus","proLabel":"Premium","freeLabel":"Gratuit","premiumLabel":"Premium","planTitle":"Gratuit vs Premium","planLead":"La version gratuite est un outil complet, pas une version d'essai. Premium est facultatif.","privacyTitle":"Confidentiel par conception","privacyLead":"Vos données restent sur votre appareil. Sans compte, sans analyse, sans suivi. Découvrez ce qui est stocké et quand l'extension utilise le réseau.","privacyPoints":["Traitement local","Sans compte","Licence facultative"],"privacyCta":"Lire la politique de confidentialité","supportEyebrow":"Soutenir le développeur","supportHint":"Si l'extension vous aide, offrez-moi un café.","footerMore":"Plus d'extensions","footerPrivacy":"Confidentialité","footerGithub":"GitHub","footerSite":"Site web"}}};
+const CONFIG = {"name":"PageShot","github":"https://github.com/annmax1983/PageShot","icon":"icons/icon128.png","site":"https://annmax1983.com/extensions/pageshot"};
+const LANG_KEY = "vkt-pageshot-lang";
+(function () {
+  "use strict";
 
-  <script>
-    const I18N = {
-      zh: {
-        title: '隐私政策',
-        lastUpdated: '最后更新：2026 年 7 月 7 日',
-        tldr: 'PageShot 不会收集、存储或传输您的任何个人数据。所有截图处理均在您的设备本地完成。扩展唯一的网络请求是第 4 节所述的可选付费授权检查。',
-        s1Title: '1. 数据收集',
-        s1Text: 'PageShot 不收集任何个人信息、浏览数据、截图内容或使用分析。我们不使用 Cookie、追踪像素、浏览器指纹或任何形式的遥测。',
-        s2Title: '2. 工作原理',
-        s2Text: '所有截图操作完全在您的浏览器内完成：',
-        s2a: '截取 — 使用浏览器原生 API（chrome.tabs.captureVisibleTab 和 Chrome DevTools Protocol）',
-        s2b: '处理 — 图像拼接、裁剪和标注在本地 Offscreen Document 中通过 Canvas API 完成',
-        s2c: '存储 — 截图在处理期间临时保存在浏览器内存中，复制或下载后立即销毁',
-        s2d: '输出 — 图片保存到本地下载文件夹或复制到系统剪贴板',
-        s2End: '在任何环节，数据都不会离开您的浏览器。',
-        s3Title: '3. 权限说明',
-        permCol: '权限',
-        purposeCol: '用途',
-        permActiveTab: '触发截图时访问当前标签页',
-        permContextMenus: '添加右键菜单截图选项',
-        permDownloads: '将截图保存到本地下载文件夹',
-        permClipboard: '将截图复制到系统剪贴板',
-        permScripting: '在网页上注入选区覆盖层和滚动辅助脚本',
-        permStorage: '在本地保存您的偏好设置（格式、质量）',
-        permOffscreen: '在隐藏的后台文档中处理图片',
-        permTabs: '获取标签页信息以协调截图',
-        permDebugger: '访问 Chrome DevTools Protocol 实现全页截图（无需滚动）',
-        s3Note: 'PageShot 仅请求功能所必需的最低权限。debugger 权限仅用于通过 Page.captureScreenshot CDP 命令实现全页截图，不用于任何监控、调试或数据收集。',
-        s4Title: '4. 第三方服务与授权验证',
-        s4Text: 'PageShot 不连接任何第三方服务、API、CDN 或外部服务器，截图处理完全离线运行。唯一的例外是可选的付费授权：免费功能不发起任何网络请求。激活授权后，扩展仅联系授权服务器（api.annmax1983.com）完成激活、复验（打开扩展时每 2 小时最多一次）与解绑。这些请求仅携带授权密钥、随机安装标识和基础浏览器元数据（浏览器名称/版本、浏览器语言、时区、User-Agent），绝不包含您的截图、页面内容或浏览数据。 授权服务器会记录这些请求的 IP 地址，仅用于限速与防滥用，不用于画像或广告，也不会共享给第三方。',
-        s5Title: '5. 数据共享',
-        s5Text: '我们不会与第三方共享、出售、出租或交易任何数据，因为我们根本不收集任何数据。',
-        s6Title: '6. 儿童隐私',
-        s6Text: 'PageShot 不收集任何用户的个人信息，包括 13 岁以下的儿童。',
-        s7Title: '7. 政策变更',
-        s7Text: '如果我们修改本隐私政策，将更新上方的"最后更新"日期。在任何变更后继续使用本扩展即表示您接受更新后的政策。',
-        s8Title: '8. 开源',
-        s8Text: 'PageShot 的源代码可供审查。您可以验证扩展的行为是否与此隐私政策描述一致。',
-        s9Title: '9. 联系方式',
-        s9Text: '如果您对本隐私政策有疑问或顾虑，请通过以下方式联系：',
-        rights: '保留所有权利。',
-        home: '首页'
-      },
-      en: {
-        title: 'Privacy Policy',
-        lastUpdated: 'Last updated: July 7, 2026',
-        tldr: 'PageShot does NOT collect, store, or transmit any of your personal data. All screenshot processing happens fully locally on your device. The only network request the extension makes is the optional Premium license check described in Section 4.',
-        s1Title: '1. Data Collection',
-        s1Text: 'PageShot does not collect any personal information, browsing data, screenshots, or usage analytics. We do not use cookies, tracking pixels, fingerprinting, or telemetry of any kind.',
-        s2Title: '2. How PageShot Works',
-        s2Text: 'All screenshot operations are performed entirely within your browser:',
-        s2a: 'Capture — Screenshots are taken using browser-native APIs (chrome.tabs.captureVisibleTab and Chrome DevTools Protocol)',
-        s2b: 'Processing — Image stitching, cropping, and annotation are performed in a local Offscreen Document using the Canvas API',
-        s2c: 'Storage — Screenshots are held temporarily in browser memory during processing and are immediately discarded after you copy or download them',
-        s2d: 'Output — Images are saved to your local downloads folder or copied to your system clipboard',
-        s2End: 'At no point does any data leave your browser.',
-        s3Title: '3. Permissions Explained',
-        permCol: 'Permission',
-        purposeCol: 'Purpose',
-        permActiveTab: 'Access the current tab when you trigger a screenshot',
-        permContextMenus: 'Add right-click menu options for capturing',
-        permDownloads: 'Save screenshots to your local downloads folder',
-        permClipboard: 'Copy screenshots to your system clipboard',
-        permScripting: 'Inject the selection overlay and scroll helpers on web pages',
-        permStorage: 'Save your preferences (format, quality) locally',
-        permOffscreen: 'Process images in a hidden background document',
-        permTabs: 'Get tab information for screenshot coordination',
-        permDebugger: 'Access Chrome DevTools Protocol for full-page capture without scrolling',
-        s3Note: 'PageShot requests only the minimum permissions necessary for its functionality. The debugger permission is used solely for full-page screenshot capture via the Page.captureScreenshot CDP command. It is not used for any monitoring, debugging, or data collection purpose.',
-        s4Title: '4. Third-Party Services & License Verification',
-        s4Text: 'PageShot does not connect to any third-party services, APIs, CDNs, or external servers, and screenshot handling works entirely offline. The only exception is the optional Premium license: free features make no network request at all. With a license, the extension contacts our license server (api.annmax1983.com) only to activate it, to re-verify it at most once every 2 hours when you open the extension, and to release it. These requests carry your license key, a random install identifier, and basic browser metadata (browser name/version, browser language, time zone, user agent) — never your screenshots, page content, or browsing data. Our license server records the IP address of these requests solely for rate limiting and abuse prevention — never for profiling, advertising, or sharing with third parties.',
-        s5Title: '5. Data Sharing',
-        s5Text: 'We do not share, sell, rent, or trade any data with third parties because we do not collect any data in the first place.',
-        s6Title: '6. Children\'s Privacy',
-        s6Text: 'PageShot does not collect any personal information from any user, including children under the age of 13.',
-        s7Title: '7. Changes to This Policy',
-        s7Text: 'If we make changes to this privacy policy, we will update the "Last updated" date above. Your continued use of the extension after any changes constitutes acceptance of the updated policy.',
-        s8Title: '8. Open Source',
-        s8Text: 'PageShot\'s source code is available for review. You can verify that the extension behaves as described in this privacy policy.',
-        s9Title: '9. Contact',
-        s9Text: 'If you have questions or concerns about this privacy policy, please reach out via:',
-        rights: 'All rights reserved.',
-        home: 'Home'
-      },
-      ja: {
-        title: 'プライバシーポリシー',
-        lastUpdated: '最終更新：2026年7月7日',
-        tldr: 'PageShot は個人データを収集、保存、送信しません。すべてのスクリーンショット処理はデバイス上で完全ローカルで行われます。唯一のネットワーク通信は、セクション4に記載の任意のプレミアムライセンス確認です。',
-        s1Title: '1. データ収集',
-        s1Text: 'PageShot は個人情報、閲覧データ、スクリーンショット、使用分析を収集しません。Cookie、トラッキングピクセル、フィンガープリント、テレメトリは一切使用しません。',
-        s2Title: '2. 仕組み',
-        s2Text: 'すべてのスクリーンショット操作はブラウザ内で完結します：',
-        s2a: 'キャプチャ — ブラウザネイティブ API（chrome.tabs.captureVisibleTab および Chrome DevTools Protocol）を使用',
-        s2b: '処理 — 画像の結合、トリミング、アノテーションはローカルの Offscreen Document で Canvas API を使用して実行',
-        s2c: '保存 — スクリーンショットは処理中にブラウザメモリに一時保存され、コピーまたはダウンロード後に即座に破棄',
-        s2d: '出力 — 画像はローカルのダウンロードフォルダに保存またはシステムクリップボードにコピー',
-        s2End: 'データがブラウザから離れることは一切ありません。',
-        s3Title: '3. 権限の説明',
-        permCol: '権限',
-        purposeCol: '目的',
-        permActiveTab: 'スクリーンショット実行時に現在のタブにアクセス',
-        permContextMenus: '右クリックメニューにキャプチャオプションを追加',
-        permDownloads: 'スクリーンショットをローカルのダウンロードフォルダに保存',
-        permClipboard: 'スクリーンショットをシステムクリップボードにコピー',
-        permScripting: 'ウェブページに選択オーバーレイとスクロールヘルパーを注入',
-        permStorage: '設定（フォーマット、品質）をローカルに保存',
-        permOffscreen: '非表示のバックグラウンドドキュメントで画像を処理',
-        permTabs: 'スクリーンショットの調整にタブ情報を取得',
-        permDebugger: 'スクロールなしの全ページキャプチャ用に Chrome DevTools Protocol にアクセス',
-        s3Note: 'PageShot は機能に必要な最小限の権限のみを要求します。debugger 権限は Page.captureScreenshot CDP コマンドによる全ページキャプチャにのみ使用され、監視、デバッグ、データ収集には使用されません。',
-        s4Title: '4. サードパーティサービスとライセンス検証',
-        s4Text: 'PageShot はサードパーティサービス、API、CDN、外部サーバーに接続しません。スクリーンショット処理は完全にオフラインで動作します。唯一の例外は任意のプレミアムライセンスです：無料機能は一切ネットワーク通信を行いません。ライセンスがある場合、拡張機能はライセンスサーバー（api.annmax1983.com）にのみ接続し、有効化・再確認（拡張機能を開いたとき、2時間に最大1回）・解除を行います。これらの通信に含まれるのはライセンスキー、ランダムなインストール識別子、基本的なブラウザーメタデータ（ブラウザー名/バージョン、言語、タイムゾーン、User-Agent）のみで、スクリーンショットやページ内容、閲覧データは含まれません。 ライセンスサーバーはこれらのリクエストの IP アドレスを、レート制限と不正利用防止のみを目的として記録します。プロファイリング、広告、第三者提供には一切使用しません。',
-        s5Title: '5. データ共有',
-        s5Text: 'データを収集しないため、第三者とデータを共有、販売、貸与、取引することはありません。',
-        s6Title: '6. 子供のプライバシー',
-        s6Text: 'PageShot は13歳未満の子供を含む、すべてのユーザーの個人情報を収集しません。',
-        s7Title: '7. ポリシーの変更',
-        s7Text: 'このプライバシーポリシーを変更する場合、上記の「最終更新」日付を更新します。変更後も引き続き本拡張機能を使用することで、更新されたポリシーに同意したものとみなされます。',
-        s8Title: '8. オープンソース',
-        s8Text: 'PageShot のソースコードは公開されており、このプライバシーポリシーに記載されているとおりに動作することを確認できます。',
-        s9Title: '9. お問い合わせ',
-        s9Text: 'このプライバシーポリシーについてご質問やご懸念がございましたら、以下までお問い合わせください：',
-        rights: '全著作権所有。',
-        home: 'ホーム'
-      },
-      de: {
-        title: 'Datenschutzrichtlinie',
-        lastUpdated: 'Letzte Aktualisierung: 7. Juli 2026',
-        tldr: 'PageShot sammelt, speichert oder überträgt KEINE persönlichen Daten. Alle Screenshot-Verarbeitung erfolgt lokal auf Ihrem Gerät. Die einzige Netzwerkanfrage ist die optionale Premium-Lizenzprüfung (siehe Abschnitt 4).',
-        s1Title: '1. Datenerfassung',
-        s1Text: 'PageShot erfasst keine persönlichen Informationen, Browsdaten, Screenshots oder Nutzungsanalysen. Wir verwenden keine Cookies, Tracking-Pixel, Fingerprints oder Telemetrie.',
-        s2Title: '2. So funktioniert PageShot',
-        s2Text: 'Alle Screenshot-Operationen werden vollständig in Ihrem Browser durchgeführt:',
-        s2a: 'Erfassung — Screenshots werden mit browsernativen APIs aufgenommen (chrome.tabs.captureVisibleTab und Chrome DevTools Protocol)',
-        s2b: 'Verarbeitung — Bildzuschnitt, Zuschneidung und Annotation erfolgen in einem lokalen Offscreen Document mit der Canvas API',
-        s2c: 'Speicherung — Screenshots werden während der Verarbeitung temporär im Browser-Speicher gehalten und nach dem Kopieren oder Herunterladen sofort gelöscht',
-        s2d: 'Ausgabe — Bilder werden in Ihren lokalen Download-Ordner gespeichert oder in die Zwischenablage kopiert',
-        s2End: 'Zu keinem Zeitpunkt verlassen Daten Ihren Browser.',
-        s3Title: '3. Berechtigungen erklärt',
-        permCol: 'Berechtigung',
-        purposeCol: 'Zweck',
-        permActiveTab: 'Zugriff auf die aktuelle Registerkarte bei Screenshot-Auslösung',
-        permContextMenus: 'Rechtsklick-Menüoptionen für Erfassung hinzufügen',
-        permDownloads: 'Screenshots im lokalen Download-Ordner speichern',
-        permClipboard: 'Screenshots in die System-Zwischenablage kopieren',
-        permScripting: 'Auswahl-Overlay und Scroll-Hilfen auf Webseiten einfügen',
-        permStorage: 'Einstellungen (Format, Qualität) lokal speichern',
-        permOffscreen: 'Bilder in einem versteckten Hintergrunddokument verarbeiten',
-        permTabs: 'Tab-Informationen für Screenshot-Koordination abrufen',
-        permDebugger: 'Zugriff auf Chrome DevTools Protocol für Ganzseiten-Erfassung ohne Scrollen',
-        s3Note: 'PageShot fordert nur die für seine Funktionalität erforderlichen Mindestberechtigungen an. Die debugger-Berechtigung wird ausschließlich für die Ganzseiten-Screenshot-Erfassung über den Page.captureScreenshot CDP-Befehl verwendet. Sie wird nicht für Überwachung, Debugging oder Datenerfassung verwendet.',
-        s4Title: '4. Drittanbieterdienste und Lizenzprüfung',
-        s4Text: 'PageShot verbindet sich nicht mit Drittanbieterdiensten, APIs, CDNs oder externen Servern. Die Screenshot-Verarbeitung läuft vollständig offline. Die einzige Ausnahme ist die optionale Premium-Lizenz: Kostenlose Funktionen senden keine Netzwerkanfrage. Mit einer Lizenz kontaktiert die Erweiterung unseren Lizenzserver (api.annmax1983.com) ausschließlich zum Aktivieren, zum Nachprüfen (höchstens einmal alle 2 Stunden beim Öffnen der Erweiterung) und zum Freigeben. Diese Anfragen enthalten den Lizenzschlüssel, eine zufällige Installationskennung und grundlegende Browser-Metadaten (Browser-Name/-Version, Browsersprache, Zeitzone, User-Agent) — niemals Ihre Screenshots, Seiteninhalte oder Browsdaten. Unser Lizenzserver protokolliert die IP-Adresse dieser Anfragen ausschließlich zur Ratenbegrenzung und Missbrauchsabwehr – niemals für Profiling, Werbung oder Weitergabe an Dritte.',
-        s5Title: '5. Datenweitergabe',
-        s5Text: 'Wir geben keine Daten weiter, verkaufen, vermieten oder handeln mit Dritten, da wir überhaupt keine Daten erheben.',
-        s6Title: '6. Datenschutz von Kindern',
-        s6Text: 'PageShot erfasst keine persönlichen Informationen von Nutzern, einschließlich Kindern unter 13 Jahren.',
-        s7Title: '7. Änderungen dieser Richtlinie',
-        s7Text: 'Bei Änderungen dieser Datenschutzrichtlinie aktualisieren wir das Datum „Letzte Aktualisierung" oben. Ihre fortgesetzte Nutzung der Erweiterung nach Änderungen gilt als Annahme der aktualisierten Richtlinie.',
-        s8Title: '8. Open Source',
-        s8Text: 'Der Quellcode von PageShot ist öffentlich einsehbar. Sie können überprüfen, dass sich die Erweiterung wie in dieser Datenschutzrichtlinie beschrieben verhält.',
-        s9Title: '9. Kontakt',
-        s9Text: 'Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie haben, wenden Sie sich bitte an:',
-        rights: 'Alle Rechte vorbehalten.',
-        home: 'Startseite'
-      },
-      es: {
-        title: 'Política de Privacidad',
-        lastUpdated: 'Última actualización: 7 de julio de 2026',
-        tldr: 'PageShot NO recopila, almacena ni transmite ningún dato personal. Todo el procesamiento de capturas ocurre localmente en su dispositivo. La única solicitud de red es la verificación opcional de la licencia Premium (véase la sección 4).',
-        s1Title: '1. Recopilación de Datos',
-        s1Text: 'PageShot no recopila información personal, datos de navegación, capturas de pantalla ni analíticas de uso. No utilizamos cookies, píxeles de seguimiento, huellas digitales ni telemetría.',
-        s2Title: '2. Cómo Funciona PageShot',
-        s2Text: 'Todas las operaciones de captura se realizan completamente dentro de su navegador:',
-        s2a: 'Captura — Las capturas se toman usando APIs nativas del navegador (chrome.tabs.captureVisibleTab y Chrome DevTools Protocol)',
-        s2b: 'Procesamiento — La unión, recorte y anotación de imágenes se realiza en un Offscreen Document local usando la API Canvas',
-        s2c: 'Almacenamiento — Las capturas se mantienen temporalmente en la memoria del navegador durante el procesamiento y se descartan inmediatamente después de copiarlas o descargarlas',
-        s2d: 'Salida — Las imágenes se guardan en su carpeta de descargas local o se copian al portapapeles del sistema',
-        s2End: 'En ningún momento los datos salen de su navegador.',
-        s3Title: '3. Permisos Explicados',
-        permCol: 'Permiso',
-        purposeCol: 'Propósito',
-        permActiveTab: 'Acceder a la pestaña actual al activar una captura',
-        permContextMenus: 'Agregar opciones de captura en el menú clic derecho',
-        permDownloads: 'Guardar capturas en la carpeta de descargas local',
-        permClipboard: 'Copiar capturas al portapapeles del sistema',
-        permScripting: 'Inyectar la superposición de selección y ayudantes de desplazamiento en páginas web',
-        permStorage: 'Guardar sus preferencias (formato, calidad) localmente',
-        permOffscreen: 'Procesar imágenes en un documento de fondo oculto',
-        permTabs: 'Obtener información de pestañas para la coordinación de capturas',
-        permDebugger: 'Acceder a Chrome DevTools Protocol para captura de página completa sin desplazamiento',
-        s3Note: 'PageShot solicita solo los permisos mínimos necesarios para su funcionalidad. El permiso de debugger se utiliza únicamente para la captura de página completa mediante el comando CDP Page.captureScreenshot. No se usa para ningún propósito de monitoreo, depuración o recopilación de datos.',
-        s4Title: '4. Servicios de Terceros y Verificación de Licencia',
-        s4Text: 'PageShot no se conecta a servicios de terceros, APIs, CDNs ni servidores externos. El procesamiento de capturas funciona completamente sin conexión. La única excepción es la licencia Premium opcional: las funciones gratuitas no realizan ninguna petición de red. Con una licencia, la extensión contacta con nuestro servidor de licencias (api.annmax1983.com) solo para activarla, reverificarla (como máximo una vez cada 2 horas al abrir la extensión) y liberarla. Esas peticiones incluyen tu clave de licencia, un identificador de instalación aleatorio y metadatos básicos del navegador (nombre/versión, idioma, zona horaria, User-Agent) — nunca tus capturas, el contenido de las páginas ni los datos de navegación. Nuestro servidor de licencias registra la dirección IP de estas solicitudes únicamente para limitar la tasa de peticiones y evitar abusos; nunca para elaborar perfiles, publicidad ni compartirla con terceros.',
-        s5Title: '5. Compartición de Datos',
-        s5Text: 'No compartimos, vendemos, alquilamos ni intercambiamos datos con terceros porque no recopilamos ningún dato en primer lugar.',
-        s6Title: '6. Privacidad de Menores',
-        s6Text: 'PageShot no recopila información personal de ningún usuario, incluidos menores de 13 años.',
-        s7Title: '7. Cambios en Esta Política',
-        s7Text: 'Si realizamos cambios en esta política de privacidad, actualizaremos la fecha de "Última actualización" arriba. Su uso continuado de la extensión después de cualquier cambio constituye la aceptación de la política actualizada.',
-        s8Title: '8. Código Abierto',
-        s8Text: 'El código fuente de PageShot está disponible para revisión. Puede verificar que la extensión se comporta como se describe en esta política de privacidad.',
-        s9Title: '9. Contacto',
-        s9Text: 'Si tiene preguntas o inquietudes sobre esta política de privacidad, comuníquese a través de:',
-        rights: 'Todos los derechos reservados.',
-        home: 'Inicio'
-      },
-      fr: {
-        title: 'Politique de Confidentialité',
-        lastUpdated: 'Dernière mise à jour : 7 juillet 2026',
-        tldr: 'PageShot ne collecte, ne stocke ni ne transmet aucune donnée personnelle. Tout le traitement des captures d\'écran se fait localement sur votre appareil. La seule requête réseau est la vérification facultative de la licence Premium (voir section 4).',
-        s1Title: '1. Collecte de Données',
-        s1Text: 'PageShot ne collecte aucune information personnelle, données de navigation, captures d\'écran ou analyses d\'utilisation. Nous n\'utilisons pas de cookies, pixels de traçage, empreintes digitales ou télémétrie.',
-        s2Title: '2. Comment Fonctionne PageShot',
-        s2Text: 'Toutes les opérations de capture sont effectuées entièrement dans votre navigateur :',
-        s2a: 'Capture — Les captures sont prises avec des API natives du navigateur (chrome.tabs.captureVisibleTab et Chrome DevTools Protocol)',
-        s2b: 'Traitement — L\'assemblage, le recadrage et l\'annotation des images sont effectués dans un Offscreen Document local avec l\'API Canvas',
-        s2c: 'Stockage — Les captures sont temporairement conservées en mémoire pendant le traitement et supprimées immédiatement après copie ou téléchargement',
-        s2d: 'Sortie — Les images sont enregistrées dans votre dossier de téléchargement local ou copiées dans le presse-papiers système',
-        s2End: 'À aucun moment les données ne quittent votre navigateur.',
-        s3Title: '3. Permissions Expliquées',
-        permCol: 'Permission',
-        purposeCol: 'But',
-        permActiveTab: 'Accéder à l\'onglet actuel lors du déclenchement d\'une capture',
-        permContextMenus: 'Ajouter des options de capture dans le menu clic droit',
-        permDownloads: 'Enregistrer les captures dans le dossier de téléchargement local',
-        permClipboard: 'Copier les captures dans le presse-papiers système',
-        permScripting: 'Injecter la superposition de sélection et les aides de défilement sur les pages web',
-        permStorage: 'Enregistrer vos préférences (format, qualité) localement',
-        permOffscreen: 'Traiter les images dans un document d\'arrière-plan caché',
-        permTabs: 'Obtenir les informations des onglets pour la coordination des captures',
-        permDebugger: 'Accéder à Chrome DevTools Protocol pour la capture de page complète sans défilement',
-        s3Note: 'PageShot ne demande que les permissions minimales nécessaires à son fonctionnement. La permission debugger est utilisée uniquement pour la capture de page complète via la commande CDP Page.captureScreenshot. Elle n\'est utilisée à aucune fin de surveillance, de débogage ou de collecte de données.',
-        s4Title: '4. Services Tiers et Vérification de Licence',
-        s4Text: 'PageShot ne se connecte à aucun service tiers, API, CDN ou serveur externe. Le traitement des captures fonctionne entièrement hors ligne. La seule exception est la licence Premium facultative : les fonctions gratuites n\'émettent aucune requête réseau. Avec une licence, l\'extension contacte notre serveur de licences (api.annmax1983.com) uniquement pour l\'activer, la revérifier (au plus une fois toutes les 2 heures à l\'ouverture de l\'extension) et la libérer. Ces requêtes contiennent votre clé de licence, un identifiant d\'installation aléatoire et des métadonnées navigateur de base (nom/version, langue, fuseau horaire, User-Agent) — jamais vos captures, le contenu des pages ni vos données de navigation. Notre serveur de licences enregistre l\'adresse IP de ces requêtes uniquement pour limiter le débit et prévenir les abus — jamais pour du profilage, de la publicité ou un partage avec des tiers.',
-        s5Title: '5. Partage de Données',
-        s5Text: 'Nous ne partageons, vendons, louons ni échangeons de données avec des tiers car nous ne collectons aucune donnée.',
-        s6Title: '6. Confidentialité des Enfants',
-        s6Text: 'PageShot ne collecte aucune information personnelle d\'un utilisateur, y compris les enfants de moins de 13 ans.',
-        s7Title: '7. Modifications de Cette Politique',
-        s7Text: 'Si nous modifions cette politique de confidentialité, nous mettrons à jour la date de « Dernière mise à jour » ci-dessus. Votre utilisation continue de l\'extension après toute modification constitue l\'acceptation de la politique mise à jour.',
-        s8Title: '8. Open Source',
-        s8Text: 'Le code source de PageShot est disponible pour examen. Vous pouvez vérifier que l\'extension se comporte comme décrit dans cette politique de confidentialité.',
-        s9Title: '9. Contact',
-        s9Text: 'Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter via :',
-        rights: 'Tous droits réservés.',
-        home: 'Accueil'
-      }
-    };
+  var select = document.getElementById("p-lang");
+  var observer = null;
+  var ui = function (lang) { return UI_ALL[lang] || UI_ALL.en; };
 
-    function detectLang() {
-      const raw = (navigator.language || 'en');
-      const map = { 'zh-TW': 'zh', 'zh-Hans': 'zh', 'zh-Hant': 'zh' };
-      const mapped = map[raw] || raw;
-      const base = mapped.split('-')[0].toLowerCase();
-      if (I18N[mapped]) return mapped;
-      return I18N[base] ? base : 'en';
+  function esc(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function setText(id, value) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = value == null ? "" : value;
+  }
+
+  function detect() {
+    var codes = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < codes.length; i++) {
+      var code = String(codes[i] || "").toLowerCase();
+      if (code.indexOf("zh") === 0) return "zh";
+      if (code.indexOf("ja") === 0) return "ja";
+      if (code.indexOf("de") === 0) return "de";
+      if (code.indexOf("es") === 0) return "es";
+      if (code.indexOf("fr") === 0) return "fr";
+      if (code.indexOf("en") === 0) return "en";
     }
+    return "en";
+  }
 
-    function apply(t) {
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (t[key]) el.textContent = t[key];
+  function initToc() {
+    if (observer) observer.disconnect();
+    var links = Array.prototype.slice.call(document.querySelectorAll("#p-toc a"));
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".policy-card"));
+    if (!links.length || !cards.length || typeof IntersectionObserver === "undefined") return;
+
+    function activate(id) {
+      links.forEach(function (link) {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + id);
       });
-      document.documentElement.lang = detectLang();
     }
 
-    apply(I18N[detectLang()]);
-  </script>
+    observer = new IntersectionObserver(function (entries) {
+      var visible = entries.filter(function (entry) { return entry.isIntersecting; });
+      if (visible.length) activate(visible[0].target.id);
+    }, { rootMargin: "-18% 0px -68% 0px", threshold: [0, 1] });
+
+    cards.forEach(function (card) { observer.observe(card); });
+    if (links[0]) links[0].classList.add("active");
+  }
+
+  function render(lang) {
+    var data = MODEL.langs[lang];
+    if (!data) return;
+    var u = ui(lang);
+
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+    document.title = CONFIG.name + " — " + u.privacyTitle;
+
+    setText("p-home", u.home);
+    setText("p-eyebrow", u.privacyTitle);
+    setText("p-h1", CONFIG.name);
+    setText("p-h1-sub", u.privacyTitle);
+    setText("p-updated", u.lastUpdated);
+    setText("p-toc-title", u.onThisPage);
+
+    var summary = document.getElementById("p-summary");
+    if (summary) summary.innerHTML = data.summary || "";
+
+    var chips = document.getElementById("p-chips");
+    if (chips) {
+      chips.innerHTML = u.chips.map(function (chip) {
+        return '<span class="chip">' + esc(chip) + "</span>";
+      }).join("");
+    }
+
+    setText("p-footer-home", u.footerHome);
+    setText("p-footer-privacy", u.privacyTitle);
+    setText("p-footer-github", u.footerGithub);
+    setText("p-footer-site", u.footerSite);
+    setText("p-footer-email", u.footerEmail || "Email");
+
+    var toc = document.getElementById("p-toc");
+    var sections = document.getElementById("p-sections");
+    if (!toc || !sections) return;
+    toc.innerHTML = "";
+    sections.innerHTML = "";
+
+    data.sections.forEach(function (section, index) {
+      var number = String(index + 1).padStart(2, "0");
+      var id = "section-" + (index + 1);
+
+      var link = document.createElement("a");
+      link.href = "#" + id;
+      link.innerHTML = "<span>" + number + "</span>" + esc(section.t);
+      toc.appendChild(link);
+
+      var card = document.createElement("article");
+      card.className = "policy-card";
+      card.id = id;
+      card.innerHTML = '<h2><span class="policy-num">' + number + "</span>" + esc(section.t) + '</h2><div class="policy-body">' + section.html + "</div>";
+      sections.appendChild(card);
+    });
+
+    initToc();
+  }
+
+  function storedLang() {
+    try { return localStorage.getItem(LANG_KEY); } catch (error) { return null; }
+  }
+
+  function remember(lang) {
+    try { localStorage.setItem(LANG_KEY, lang); } catch (error) { /* storage can be blocked */ }
+  }
+
+  initToc();
+
+  if (select) {
+    var saved = storedLang();
+    var initial = saved && MODEL.langs[saved] ? saved : detect();
+    if (!MODEL.langs[initial]) initial = "en";
+    select.value = initial;
+    if (initial !== "en") render(initial);
+    select.addEventListener("change", function () {
+      remember(select.value);
+      render(select.value);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+})();
+
+</script>
 </body>
 </html>

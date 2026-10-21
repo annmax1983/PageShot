@@ -16,7 +16,6 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 |-----------|--------|
 | 🔒 **Privacy-First** | All processing happens locally. No uploads, no tracking. The only outbound request is optional license validation. |
 | 💧 **No Watermark** | Clean screenshots, no branding imposed on your captures. |
-| 🆓 **No forced watermarks on captured images. |
 | 📄 **Full Page Capture** | One-click long screenshot — scrolls and stitches automatically. |
 | 📋 **Copy & Paste** | Copy to clipboard instantly — paste directly into chats, emails, documents. |
 | ✏️ **Built-in Annotation** | Draw rectangles and mosaic blur before sharing. |
@@ -143,7 +142,7 @@ PageShot is built with privacy as a core principle:
 - ✅ **No analytics** — No tracking, no telemetry, no remote calls apart from optional license validation
 - ✅ **No cookies** — No reading or writing of browser cookies
 - ✅ **No browsing history** — No access to your browsing data
-- ✅ **Temporary storage only** — Screenshots exist briefly during processing, then cleared
+- ✅ **Local editing storage** — The five most recent captures stay in your browser for the annotation editor and older ones are pruned automatically; nothing is uploaded
 - ✅ **Minimal permissions** — Only requests what's strictly necessary
 
 ---

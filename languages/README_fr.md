@@ -16,7 +16,6 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 |-----------|--------|
 | 🔒 **Confidentialité avant tout** | Tout le traitement se fait en local. Pas d'envoi, pas de suivi. La seule requête sortante est la validation facultative de licence. |
 | 💧 **Sans filigrane** | Captures propres, aucune marque imposée sur vos images. |
-| 🆓 **Pas de filigrane forcé sur les images capturées. |
 | 📄 **Capture de page complète** | Capture longue en un clic — défilement et assemblage automatiques. |
 | 📋 **Copier et coller** | Copie instantanée dans le presse-papiers — collez directement dans vos conversations, e-mails, documents. |
 | ✏️ **Annotations intégrées** | Dessinez des rectangles et appliquez un flou en mosaïque avant de partager. |
@@ -143,7 +142,7 @@ PageShot a été conçu avec la confidentialité comme principe fondamental :
 - ✅ **Pas d'analytics** — Aucun suivi, aucune télémétrie, aucun appel distant hormis la validation facultative de licence
 - ✅ **Pas de cookies** — Aucune lecture ni écriture de cookies du navigateur
 - ✅ **Pas d'historique de navigation** — Aucun accès à vos données de navigation
-- ✅ **Stockage temporaire uniquement** — Les captures existent brièvement pendant le traitement, puis sont supprimées
+- ✅ **Stockage local d'édition** — Les cinq captures les plus récentes restent dans votre navigateur pour l'éditeur d'annotations et les plus anciennes sont supprimées automatiquement ; rien n'est téléversé
 - ✅ **Permissions minimales** — Ne demande que le strict nécessaire
 
 ---

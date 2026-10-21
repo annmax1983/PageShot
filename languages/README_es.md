@@ -16,7 +16,6 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 |---------|--------|
 | 🔒 **Privacidad ante todo** | Todo el procesamiento ocurre localmente. Sin subidas, sin rastreo. La única petición saliente es la validación opcional de la licencia. |
 | 💧 **Sin marca de agua** | Capturas limpias, sin branding impuesto en tus capturas. |
-| 🆓 **Sin marcas de agua forzadas en las imágenes capturadas. |
 | 📄 **Captura de página completa** | Captura larga con un clic — se desplaza y une automáticamente. |
 | 📋 **Copiar y pegar** | Copia al portapapeles al instante — pega directamente en chats, correos y documentos. |
 | ✏️ **Anotación integrada** | Dibuja rectángulos y desenfoque mosaico antes de compartir. |
@@ -143,7 +142,7 @@ PageShot está construida con la privacidad como principio fundamental:
 - ✅ **Sin analíticas** — Sin rastreo, sin telemetría, sin llamadas remotas salvo la validación opcional de la licencia
 - ✅ **Sin cookies** — Sin lectura ni escritura de cookies del navegador
 - ✅ **Sin historial de navegación** — Sin acceso a tus datos de navegación
-- ✅ **Solo almacenamiento temporal** — Las capturas existen brevemente durante el procesamiento y luego se borran
+- ✅ **Almacenamiento local de edición** — Las cinco capturas más recientes permanecen en tu navegador para el editor de anotaciones y las anteriores se eliminan automáticamente; nada se sube
 - ✅ **Permisos mínimos** — Solo solicita lo estrictamente necesario
 
 ---
