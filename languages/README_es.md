@@ -65,7 +65,7 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 ## Vista previa
 
 <p align="center">
-  <img src="icons/icon128.png" alt="Icono de PageShot" width="80">
+  <img src="../icons/icon128.png" alt="Icono de PageShot" width="80">
 </p>
 
 ---
@@ -85,14 +85,12 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 
 ## Instalación
 
-### Desde código fuente (modo desarrollador)
+| Tienda | Enlace |
+|---|---|
+| Chrome Web Store | [Instalar en Chrome](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
+| Complementos de Microsoft Edge | [Instalar en Edge](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
 
-1. Abre la página de extensiones de tu navegador:
-   - **Chrome**: `chrome://extensions/`
-   - **Edge**: `edge://extensions/`
-2. Activa el **modo de desarrollador** (interruptor arriba a la derecha)
-3. Haz clic en **Cargar descomprimida** y selecciona la carpeta `page-shot`
-4. El icono de PageShot aparecerá en tu barra de herramientas
+> Instale solo desde las tiendas oficiales de arriba; evite sitios de descarga de terceros.
 
 ---
 
@@ -125,12 +123,9 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 
 ## Estructura del menú contextual
 
-```
-PageShot
-├── Capturar área visible
-├── Capturar página completa
-└── Capturar selección
-```
+- Capturar área visible
+- Capturar página completa
+- Capturar selección
 
 ---
 
@@ -149,21 +144,10 @@ PageShot está construida con la privacidad como principio fundamental:
 
 ## Cómo funciona
 
-```
-Activación (clic derecho / atajo / popup)
-       ↓
-El Service Worker coordina la captura
-       ↓
-┌─ Área visible: chrome.tabs.captureVisibleTab()
-├─ Página completa: expande el viewport vía CDP → una sola captura en alta resolución
-└─ Selección: captura visible → recorte al rectángulo seleccionado
-       ↓
-El Offscreen Document procesa la imagen (recorte / portapapeles)
-       ↓
-Notificación emergente con acciones Copiar / Descargar / Editar
-```
-
-> **¿Por qué Offscreen?** El Manifest V3 de Chrome ejecuta el fondo como un Service Worker sin acceso al DOM. La Canvas API requiere un DOM, así que usamos la Offscreen API de Chrome para el procesamiento de imágenes.
+1. Inicia una captura desde el menú contextual, un atajo de teclado o el popup.
+2. Elige qué capturar: el área visible, la página completa o una región que selecciones.
+3. La imagen se recorta y se procesa por completo dentro de tu navegador.
+4. Una notificación te ofrece Copiar, Descargar o Editar.
 
 ---
 

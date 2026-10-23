@@ -65,7 +65,7 @@
 ## プレビュー
 
 <p align="center">
-  <img src="icons/icon128.png" alt="PageShot Icon" width="80">
+  <img src="../icons/icon128.png" alt="PageShot Icon" width="80">
 </p>
 
 ---
@@ -85,14 +85,12 @@
 
 ## インストール
 
-### ソースから（開発者モード）
+| ストア | リンク |
+|---|---|
+| Chrome ウェブストア | [Chrome に追加](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
+| Microsoft Edge アドオン | [Edge に追加](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
 
-1. ブラウザの拡張機能ページを開きます：
-   - **Chrome**: `chrome://extensions/`
-   - **Edge**: `edge://extensions/`
-2. **デベロッパーモード**を有効にします（右上のトグル）
-3. **パッケージ化されていない拡張機能を読み込む**をクリックし、`page-shot`フォルダを選択します
-4. ツールバーにPageShotアイコンが表示されます
+> 上記の公式ストアからのみインストールしてください。第三者サイトの利用は避けてください。
 
 ---
 
@@ -125,12 +123,9 @@
 
 ## コンテキストメニュー構成
 
-```
-PageShot
-├── 表示領域をキャプチャ
-├── フルページをキャプチャ
-└── 選択範囲をキャプチャ
-```
+- 表示領域をキャプチャ
+- フルページをキャプチャ
+- 選択範囲をキャプチャ
 
 ---
 
@@ -149,21 +144,10 @@ PageShotはプライバシーを核となる原則として構築されていま
 
 ## 動作の仕組み
 
-```
-トリガー（右クリック / ショートカット / ポップアップ）
-       ↓
-Service Workerがキャプチャを調整
-       ↓
-┌─ 表示領域: chrome.tabs.captureVisibleTab()
-├─ フルページ: CDPでビューポートを拡張 → 高解像度キャプチャを一括取得
-└─ 選択範囲: 表示領域をキャプチャ → 選択矩形にクロップ
-       ↓
-Offscreen Documentで画像を処理（クロップ / クリップボード）
-       ↓
-トースト通知にコピー / ダウンロード / 編集アクションを表示
-```
-
-> **Offscreenが必要な理由** ChromeのManifest V3ではService Workerとしてバックグラウンドが実行され、DOMアクセスがありません。Canvas APIにはDOMが必要なため、ChromeのOffscreen APIを使用して画像処理を行っています。
+1. 右クリックメニュー、キーボードショートカット、またはポップアップからキャプチャを開始します。
+2. 撮影範囲を選びます：表示領域、ページ全体、または自分で選択した領域。
+3. 画像はブラウザ内だけでトリミング・処理されます。
+4. 通知に **コピー**、**ダウンロード**、**編集** の選択肢が表示されます。
 
 ---
 

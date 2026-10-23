@@ -85,14 +85,12 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 ## Installation
 
-### From Source (Developer Mode)
+| Store | Link |
+|---|---|
+| Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
+| Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
 
-1. Open your browser's extension page:
-   - **Chrome**: `chrome://extensions/`
-   - **Edge**: `edge://extensions/`
-2. Enable **Developer mode** (top-right toggle)
-3. Click **Load unpacked** and select the `page-shot` folder
-4. The PageShot icon will appear in your toolbar
+> Install only from the official stores above — avoid third-party download sites.
 
 ---
 
@@ -125,12 +123,9 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 ## Context Menu Structure
 
-```
-PageShot
-├── Capture Visible Area
-├── Capture Full Page
-└── Capture Selection
-```
+- Capture Visible Area
+- Capture Full Page
+- Capture Selection
 
 ---
 
@@ -149,21 +144,10 @@ PageShot is built with privacy as a core principle:
 
 ## How It Works
 
-```
-Trigger (right-click / shortcut / popup)
-       ↓
-Service Worker coordinates the capture
-       ↓
-┌─ Visible Area: chrome.tabs.captureVisibleTab()
-├─ Full Page: expand viewport via CDP → single high-res capture
-└─ Selection: capture visible → crop to selection rectangle
-       ↓
-Offscreen Document processes image (crop / clipboard)
-       ↓
-Toast notification with Copy / Download / Edit actions
-```
-
-> **Why Offscreen?** Chrome's Manifest V3 runs the background as a Service Worker with no DOM access. The Canvas API requires a DOM, so we use Chrome's Offscreen API for image processing.
+1. Start a capture from the right-click menu, a keyboard shortcut, or the popup.
+2. Choose what to grab: the visible area, the whole page, or a region you select.
+3. The image is cropped and processed entirely inside your browser.
+4. A notification offers Copy, Download, or Edit.
 
 ---
 
@@ -203,5 +187,5 @@ If you find PageShot helpful, consider supporting the project!
 
 ---
 
-> **Note:** This repository is for **project showcase purposes only**. It does not contain the full source code, manifest, icons, or build scripts. Full source code will **not** be published here.
+> **Note:** This repository is a project showcase. The full source code is not published here.
 

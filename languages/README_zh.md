@@ -78,16 +78,14 @@
 
 ---
 
-## 安装方式
+## 安装
 
-### 开发者模式加载
+| 商店 | 链接 |
+|---|---|
+| Chrome 应用商店 | [在 Chrome 中安装](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
+| Microsoft Edge 加载项 | [在 Edge 中安装](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
 
-1. 打开浏览器扩展页面：
-   - **Chrome**：`chrome://extensions/`
-   - **Edge**：`edge://extensions/`
-2. 打开右上角 **开发者模式**
-3. 点击 **加载已解压的扩展程序**，选择 `page-shot` 文件夹
-4. 工具栏出现 PageShot 图标
+> 请只通过上方官方商店安装，避免使用第三方下载站。
 
 ---
 
@@ -120,12 +118,9 @@
 
 ## 右键菜单
 
-```
-PageShot
-├── 截取可见区域
-├── 截取全页长图
-└── 选定区域截图
-```
+- 截取可见区域
+- 截取全页长图
+- 选定区域截图
 
 ---
 
@@ -144,21 +139,10 @@ PageShot 以隐私为核心设计原则：
 
 ## 工作原理
 
-```
-触发（右键 / 快捷键 / 弹窗）
-       ↓
-Service Worker 协调截图流程
-       ↓
-┌─ 可见区域：chrome.tabs.captureVisibleTab()
-├─ 全页长图：滚动 → 逐段截图 → Canvas 拼接
-└─ 选区截图：截取可见区域 → 裁剪到选区范围
-       ↓
-Offscreen Document 处理图片（拼接 / 裁剪 / 剪贴板）
-       ↓
-弹出 Toast 通知，提供 复制 / 下载 / 标注 操作
-```
-
-> **为什么需要 Offscreen？** Chrome 的 Manifest V3 将后台运行在 Service Worker 中，没有 DOM 访问权限。Canvas API 需要 DOM，所以使用 Chrome 的 Offscreen API 创建隐藏文档来处理图片。
+1. 通过右键菜单、快捷键或弹窗发起截图。
+2. 选择范围：可见区域、整页长图，或你框选的区域。
+3. 裁剪与处理全部在你的浏览器内完成。
+4. 随后弹出通知，可直接选择复制、下载或编辑。
 
 ---
 

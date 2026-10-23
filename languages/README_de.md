@@ -65,7 +65,7 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 ## Vorschau
 
 <p align="center">
-  <img src="icons/icon128.png" alt="PageShot Symbol" width="80">
+  <img src="../icons/icon128.png" alt="PageShot Symbol" width="80">
 </p>
 
 ---
@@ -85,14 +85,12 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 
 ## Installation
 
-### Aus dem Quellcode (Entwicklermodus)
+| Store | Link |
+|---|---|
+| Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
+| Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
 
-1. Öffne die Erweiterungsseite deines Browsers:
-   - **Chrome**: `chrome://extensions/`
-   - **Edge**: `edge://extensions/`
-2. Aktiviere den **Entwicklermodus** (Schalter oben rechts)
-3. Klicke auf **Entpackte Erweiterung laden** und wähle den Ordner `page-shot`
-4. Das PageShot-Symbol erscheint in deiner Toolbar
+> Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
 ---
 
@@ -125,12 +123,9 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 
 ## Kontextmenü-Struktur
 
-```
-PageShot
-├── Sichtbaren Bereich erfassen
-├── Ganze Seite erfassen
-└── Auswahl erfassen
-```
+- Sichtbaren Bereich erfassen
+- Ganze Seite erfassen
+- Auswahl erfassen
 
 ---
 
@@ -149,21 +144,10 @@ PageShot wurde mit Datenschutz als Grundprinzip entwickelt:
 
 ## So funktioniert es
 
-```
-Auslöser (Rechtsklick / Tastenkürzel / Popup)
-       ↓
-Service Worker koordiniert die Aufnahme
-       ↓
-┌─ Sichtbarer Bereich: chrome.tabs.captureVisibleTab()
-├─ Ganze Seite: Viewport via CDP erweitern → einzelner High-Res-Capture
-└─ Auswahl: Sichtbaren Bereich erfassen → auf Auswahlrechteck zuschneiden
-       ↓
-Offscreen Document verarbeitet Bild (Zuschnitt / Zwischenablage)
-       ↓
-Toast-Benachrichtigung mit Kopieren / Herunterladen / Bearbeiten
-```
-
-> **Warum Offscreen?** Chromes Manifest V3 führt den Hintergrund als Service Worker ohne DOM-Zugriff aus. Die Canvas API benötigt einen DOM, daher verwenden wir Chromes Offscreen API für die Bildverarbeitung.
+1. Starte die Aufnahme über das Rechtsklick-Menü, ein Tastenkürzel oder das Popup.
+2. Wähle, was du erfassen willst: den sichtbaren Bereich, die ganze Seite oder einen von dir ausgewählten Bereich.
+3. Das Bild wird vollständig in deinem Browser zugeschnitten und verarbeitet.
+4. Eine Meldung bietet Kopieren, Herunterladen oder Bearbeiten an.
 
 ---
 
