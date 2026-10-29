@@ -4,7 +4,7 @@ English | [中文](languages/README_zh.md) | [Español](languages/README_es.md) 
 
 A lightweight browser extension for capturing screenshots — full page, visible area, or any selection. No forced watermark, fully local processing.
 
-> Chromium-based · Manifest V3 · No tracking · Fully In-Browser Processing
+> Chrome · Edge · Firefox · Manifest V3 · No tracking · Fully In-Browser Processing
 
 ---
 
@@ -18,7 +18,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | 💧 **No Watermark** | Clean screenshots, no branding imposed on your captures. |
 | 📄 **Full Page Capture** | One-click long screenshot — scrolls and stitches automatically. |
 | 📋 **Copy & Paste** | Copy to clipboard instantly — paste directly into chats, emails, documents. |
-| ✏️ **Built-in Annotation** | Draw rectangles and mosaic blur before sharing. |
+| ✏️ **Built-in Annotation** | Draw rectangles, ellipses, arrows, text and mosaic blur before sharing. |
 | ⚡ **Lightweight** | No frameworks, no bloat. |
 | 🌍 **6 Languages** | Auto-detects your browser language. |
 
@@ -30,12 +30,15 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 | Feature | Description |
 |---------|-------------|
-| 📄 **Full Page Screenshot** | Captures the entire scrollable page in one shot via Chrome DevTools Protocol. Handles lazy-loaded images and very long pages. |
+| 📄 **Full Page Screenshot** | Captures the entire scrollable page in one shot — via the Chrome DevTools Protocol on Chrome / Edge, and via scroll-and-stitch inside the page on Firefox. Handles lazy-loaded images and very long pages. |
 | 👁 **Visible Area Capture** | Instant capture of what's currently on screen. The fastest way to screenshot. |
 | ✂️ **Selection Capture** | Drag to select any region on the page with a crosshair overlay. Precise and flexible. |
 | 📋 **Copy to Clipboard** | One-click copy after capture. Paste directly into any app with Ctrl+V. |
 | 💾 **Download as PNG** | Auto-names files with page title + date (e.g. `GitHub_-_Homepage_2026-07-07.png`). |
 | ✏️ **Rectangle Annotation** | Draw colored rectangles to highlight areas. 5 colors available: red, blue, green, black, white. |
+| ◯ **Ellipse Annotation** | Draw an ellipse around a control, an error or a region. |
+| ➜ **Arrow Annotation** | Point an arrow at the exact button, field or line you mean. |
+| T **Text Annotation** | Type a label directly on the screenshot. |
 | 🟦 **Mosaic Blur** | Pixelate sensitive content — passwords, personal info, private messages. |
 | ⌨️ **Keyboard Shortcuts** | `Ctrl+Shift+V` — Capture visible + copy · `Ctrl+Shift+F` — Full page + download · `Ctrl+Shift+S` — Selection mode. |
 | 🔤 **6-Language i18n** | UI auto-matches your browser language: English, 中文, 日本語, Español, Deutsch, Français. |
@@ -46,7 +49,6 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | Feature | Description |
 |---------|-------------|
 | 📑 **Export as PDF** | Export any captured screenshot (including long pages) as a PDF document — from the annotation editor |
-| 💬 **Priority Support** | Priority email support for Premium users |
 
 ### Free vs Premium
 
@@ -54,11 +56,10 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 |---|:---:|:---:|
 | Full page / visible / selection capture | ✅ | ✅ |
 | Copy to clipboard & download as PNG | ✅ | ✅ |
-| Rectangle annotation & mosaic blur | ✅ | ✅ |
+| Rectangle, ellipse, arrow and text annotation & mosaic blur | ✅ | ✅ |
 | Keyboard shortcuts | ✅ | ✅ |
 | Fixed element handling | ✅ | ✅ |
 | Export as PDF | — | ✅ |
-| Priority support | — | ✅ |
 
 ---
 
@@ -72,14 +73,20 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 ## Supported Browsers
 
-| Browser | Status |
-|---------|--------|
-| Google Chrome | ✅ Fully supported |
-| Microsoft Edge | ✅ Fully supported |
-| Brave | ✅ Supported |
-| Opera | ✅ Supported |
-| Vivaldi | ✅ Supported |
-| Any Chromium-based browser | ✅ Supported (Manifest V3) |
+| Browser | Status | Notes |
+|---------|--------|-------|
+| Google Chrome | ✅ Fully supported | Manifest V3 |
+| Microsoft Edge | ✅ Fully supported | Manifest V3 |
+| Mozilla Firefox | ✅ Fully supported | Manifest V3, Firefox 140+ (desktop) |
+| Brave | ✅ Supported | Chromium |
+| Opera | ✅ Supported | Chromium |
+| Vivaldi | ✅ Supported | Chromium |
+| Any Chromium-based browser | ✅ Supported | Manifest V3 |
+
+> **Firefox differences:**
+> - Full-page capture on Firefox is produced by scrolling and stitching inside the page instead of Chrome's DevTools Protocol, so PageShot asks for **no `debugger` or `offscreen` permission** on Firefox — only `activeTab`, `contextMenus`, `downloads`, `storage`, `scripting` and `clipboardWrite`.
+> - Firefox reserves `Ctrl+Shift+S` for its built-in Screenshot tool. If a PageShot shortcut does not fire, reassign it in *Add-ons Manager → PageShot → Options → Manage Extension Shortcuts* (or `about:addons`).
+> - Everything else — visible-area capture, selection capture, copy, PNG download, all annotations, mosaic blur and PDF export — works the same as on Chrome and Edge.
 
 ---
 
@@ -89,6 +96,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 |---|---|
 | Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
 | Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
+| Firefox Add-ons (AMO) | 🔜 Under review — link will be added once the listing is live |
 
 > Install only from the official stores above — avoid third-party download sites.
 
@@ -115,8 +123,8 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 
 1. After capturing, click **✏️ Edit** on the toast
 2. The annotation editor opens in a new tab
-3. Use **Rectangle** or **Mosaic** tools from the toolbar
-4. Pick a color (for rectangles)
+3. Use the **Rectangle**, **Ellipse**, **Arrow**, **Text** or **Mosaic** tools from the toolbar
+4. Pick a color (for shapes and text)
 5. Click **📋 Copy** or **💾 Download** when done
 
 ---
@@ -153,17 +161,19 @@ PageShot is built with privacy as a core principle:
 
 ## Permissions
 
-| Permission | Purpose |
-|-----------|---------|
-| `activeTab` | Access the current tab when you trigger a capture |
-| `contextMenus` | Add right-click menu options |
-| `downloads` | Save screenshots to your computer |
-| `clipboardWrite` | Copy screenshots to your clipboard |
-| `scripting` | Inject the selection overlay on web pages |
-| `storage` | Save your preferences locally |
-| `offscreen` | Process images in the background |
-| `tabs` | Get tab info for capture coordination |
-| `debugger` | Required for full-page screenshot stitching on certain Chromium builds |
+| Permission | Purpose | Platforms |
+|-----------|---------|-----------|
+| `activeTab` | Access the current tab when you trigger a capture | All |
+| `contextMenus` | Add right-click menu options | All |
+| `downloads` | Save screenshots to your computer | All |
+| `clipboardWrite` | Copy screenshots to your clipboard | All |
+| `scripting` | Inject the selection overlay on web pages | All |
+| `storage` | Save your preferences locally | All |
+| `offscreen` | Process images in the background | Chrome / Edge only |
+| `tabs` | Get tab info for capture coordination | Chrome / Edge only |
+| `debugger` | Required for full-page screenshot stitching on certain Chromium builds | Chrome / Edge only |
+
+On Firefox the extension requests only the first six (`activeTab`, `contextMenus`, `downloads`, `clipboardWrite`, `scripting`, `storage`) plus access to `https://api.annmax1983.com/*` for optional licence checks. Firefox never sees a `debugger` warning because that permission is not declared in the Firefox build.
 
 ---
 

@@ -4,7 +4,7 @@
 
 Une extension légère pour capturer des captures d'écran — page complète, zone visible, ou n'importe quelle sélection. Pas de filigrane imposé, traitement 100 % local.
 
-> Chromium · Manifest V3 · Aucun suivi · Traitement 100 % dans le navigateur
+> Chrome / Edge / Firefox · Manifest V3 · Aucun suivi · Traitement 100 % dans le navigateur
 
 ---
 
@@ -18,7 +18,7 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 | 💧 **Sans filigrane** | Captures propres, aucune marque imposée sur vos images. |
 | 📄 **Capture de page complète** | Capture longue en un clic — défilement et assemblage automatiques. |
 | 📋 **Copier et coller** | Copie instantanée dans le presse-papiers — collez directement dans vos conversations, e-mails, documents. |
-| ✏️ **Annotations intégrées** | Dessinez des rectangles et appliquez un flou en mosaïque avant de partager. |
+| ✏️ **Annotations intégrées** | Dessinez des rectangles, des ellipses, des flèches et du texte, et appliquez un flou en mosaïque avant de partager. |
 | ⚡ **Léger** | Aucun framework, aucun surplus. |
 | 🌍 **6 langues** | Détecte automatiquement la langue de votre navigateur. |
 
@@ -36,6 +36,9 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 | 📋 **Copier dans le presse-papiers** | Copie en un clic après la capture. Collez directement dans n'importe quelle application avec Ctrl+V. |
 | 💾 **Télécharger en PNG** | Nomme automatiquement les fichiers avec le titre de la page + la date (ex. : `GitHub_-_Homepage_2026-07-07.png`). |
 | ✏️ **Annotation par rectangle** | Dessinez des rectangles colorés pour mettre en avant des zones. 5 couleurs disponibles : rouge, bleu, vert, noir, blanc. |
+| ◯ **Annotation par ellipse** | Entourez un contrôle, une erreur ou une zone avec une ellipse. |
+| ➜ **Annotation par flèche** | Pointez le bouton, le champ ou la ligne exacts avec une flèche. |
+| T **Annotation texte** | Saisissez une étiquette directement sur la capture. |
 | 🟦 **Flou en mosaïque** | Pixellisez les contenus sensibles — mots de passe, informations personnelles, messages privés. |
 | ⌨️ **Raccourcis clavier** | `Ctrl+Shift+V` — Capturer la zone visible + copier · `Ctrl+Shift+F` — Page complète + télécharger · `Ctrl+Shift+S` — Mode sélection. |
 | 🔤 **i18n en 6 langues** | L'interface s'adapte automatiquement à la langue de votre navigateur : English, 中文, 日本語, Español, Deutsch, Français. |
@@ -46,7 +49,6 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 | Fonctionnalité | Description |
 |---------|-------------|
 | 📑 **Export en PDF** | Exportez n'importe quelle capture (y compris les longues pages) en document PDF — depuis l'éditeur d'annotations |
-| 💬 **Support prioritaire** | Support e-mail prioritaire pour les utilisateurs Premium |
 
 ### Gratuit vs Premium
 
@@ -54,11 +56,10 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 |---|:---:|:---:|
 | Capture page complète / zone visible / sélection | ✅ | ✅ |
 | Copier dans le presse-papiers et télécharger en PNG | ✅ | ✅ |
-| Annotation par rectangle et flou en mosaïque | ✅ | ✅ |
+| Annotation par rectangle, ellipse, flèche et texte, et flou en mosaïque | ✅ | ✅ |
 | Raccourcis clavier | ✅ | ✅ |
 | Gestion des éléments fixes | ✅ | ✅ |
 | Export en PDF | — | ✅ |
-| Support prioritaire | — | ✅ |
 
 ---
 
@@ -76,10 +77,13 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 |---------|--------|
 | Google Chrome | ✅ Entièrement pris en charge |
 | Microsoft Edge | ✅ Entièrement pris en charge |
+| Mozilla Firefox | ✅ Entièrement pris en charge |
 | Brave | ✅ Pris en charge |
 | Opera | ✅ Pris en charge |
 | Vivaldi | ✅ Pris en charge |
 | Tout navigateur basé sur Chromium | ✅ Pris en charge (Manifest V3) |
+
+> **Note Firefox :** Firefox n’offre pas d’API de débogueur pour les extensions : le mode débogueur n’est donc pas proposé. Firefox ne propose pas de document offscreen, la capture pleine page passe à un assemblage par défilement dans la page ; la version Firefox ne demande donc pas la permission `offscreen`. Le reste des fonctions se comporte comme sous Chrome / Edge.
 
 ---
 
@@ -89,6 +93,7 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 |---|---|
 | Chrome Web Store | [Installer dans Chrome](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
 | Microsoft Edge Add-ons | [Installer dans Edge](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
+| Modules complémentaires Firefox (AMO) | 🔜 En cours d’examen — le lien sera ajouté après publication |
 
 > Installez uniquement depuis les boutiques officielles ci-dessus — évitez les sites de téléchargement tiers.
 
@@ -115,8 +120,8 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 
 1. Après la capture, cliquez sur **✏️ Modifier** dans la notification
 2. L'éditeur d'annotations s'ouvre dans un nouvel onglet
-3. Utilisez les outils **Rectangle** ou **Mosaïque** depuis la barre d'outils
-4. Choisissez une couleur (pour les rectangles)
+3. Utilisez les outils **Rectangle**, **Ellipse**, **Flèche**, **Texte** ou **Mosaïque** depuis la barre d'outils
+4. Choisissez une couleur (pour les formes et le texte)
 5. Cliquez sur **📋 Copier** ou **💾 Télécharger** quand vous avez terminé
 
 ---
@@ -163,7 +168,7 @@ PageShot a été conçu avec la confidentialité comme principe fondamental :
 | `storage` | Sauvegarde vos préférences en local |
 | `offscreen` | Traite les images en arrière-plan |
 | `tabs` | Récupère les infos des onglets pour la coordination de capture |
-| `debugger` | Nécessaire pour l'assemblage de captures de page complète sur certaines versions de Chromium |
+| `debugger` | Nécessaire pour l'assemblage de captures de page complète sur certaines versions de Chromium (uniquement Chrome / Edge) |
 
 ---
 

@@ -4,7 +4,7 @@
 
 Una extensión ligera para el navegador que captura capturas de pantalla — página completa, área visible o cualquier selección. Sin marca de agua forzada, procesamiento completamente local.
 
-> Basada en Chromium · Manifest V3 · Sin rastreo · Procesamiento completo en el navegador
+> Chrome / Edge / Firefox · Manifest V3 · Sin rastreo · Procesamiento completo en el navegador
 
 ---
 
@@ -18,7 +18,7 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 | 💧 **Sin marca de agua** | Capturas limpias, sin branding impuesto en tus capturas. |
 | 📄 **Captura de página completa** | Captura larga con un clic — se desplaza y une automáticamente. |
 | 📋 **Copiar y pegar** | Copia al portapapeles al instante — pega directamente en chats, correos y documentos. |
-| ✏️ **Anotación integrada** | Dibuja rectángulos y desenfoque mosaico antes de compartir. |
+| ✏️ **Anotación integrada** | Dibuja rectángulos, elipses, flechas y texto, además de desenfoque mosaico, antes de compartir. |
 | ⚡ **Ligera** | Sin frameworks, sin peso muerto. |
 | 🌍 **6 idiomas** | Detecta automáticamente el idioma de tu navegador. |
 
@@ -36,6 +36,9 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 | 📋 **Copiar al portapapeles** | Copia con un clic después de la captura. Pega directamente en cualquier aplicación con Ctrl+V. |
 | 💾 **Descargar como PNG** | Nombra automáticamente los archivos con el título de la página + fecha (ej. `GitHub_-_Homepage_2026-07-07.png`). |
 | ✏️ **Anotación con rectángulos** | Dibuja rectángulos de colores para resaltar áreas. 5 colores disponibles: rojo, azul, verde, negro, blanco. |
+| ◯ **Anotación con elipses** | Dibuja una elipse alrededor de un control, un error o una zona. |
+| ➜ **Anotación con flechas** | Señala con una flecha el botón, el campo o la línea exactos. |
+| T **Anotación de texto** | Escribe una etiqueta directamente sobre la captura. |
 | 🟦 **Desenfoque mosaico** | Pixela contenido sensible — contraseñas, información personal, mensajes privados. |
 | ⌨️ **Atajos de teclado** | `Ctrl+Shift+V` — Captura visible + copiar · `Ctrl+Shift+F` — Página completa + descargar · `Ctrl+Shift+S` — Modo selección. |
 | 🔤 **i18n en 6 idiomas** | La interfaz se adapta automáticamente al idioma de tu navegador: English, 中文, 日本語, Español, Deutsch, Français. |
@@ -46,7 +49,6 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 | Funcionalidad | Descripción |
 |---------|-------------|
 | 📑 **Exportar como PDF** | Exporta cualquier captura (incluidas páginas largas) como documento PDF — desde el editor de anotaciones |
-| 💬 **Soporte prioritario** | Soporte prioritario por correo electrónico para usuarios Premium |
 
 ### Gratis vs Premium
 
@@ -54,11 +56,10 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 |---|:---:|:---:|
 | Captura de página completa / visible / selección | ✅ | ✅ |
 | Copiar al portapapeles y descargar como PNG | ✅ | ✅ |
-| Anotación con rectángulos y desenfoque mosaico | ✅ | ✅ |
+| Anotación con rectángulos, elipses, flechas y texto, más desenfoque mosaico | ✅ | ✅ |
 | Atajos de teclado | ✅ | ✅ |
 | Gestión de elementos fijos | ✅ | ✅ |
 | Exportar como PDF | — | ✅ |
-| Soporte prioritario | — | ✅ |
 
 ---
 
@@ -76,10 +77,13 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 |---------|--------|
 | Google Chrome | ✅ Totalmente compatible |
 | Microsoft Edge | ✅ Totalmente compatible |
+| Mozilla Firefox | ✅ Totalmente compatible |
 | Brave | ✅ Compatible |
 | Opera | ✅ Compatible |
 | Vivaldi | ✅ Compatible |
 | Cualquier navegador basado en Chromium | ✅ Compatible (Manifest V3) |
+
+> **Nota sobre Firefox:** Firefox no ofrece API de depurador para extensiones, por lo que no hay modo depurador. Firefox no dispone de documento offscreen, así que la captura de página completa pasa a un ensamblado por desplazamiento dentro de la página; la versión de Firefox no solicita el permiso `offscreen`. El resto de funciones se comporta igual que en Chrome / Edge.
 
 ---
 
@@ -89,6 +93,7 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 |---|---|
 | Chrome Web Store | [Instalar en Chrome](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
 | Complementos de Microsoft Edge | [Instalar en Edge](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
+| Complementos de Firefox (AMO) | 🔜 En revisión: el enlace se añadirá al publicarse |
 
 > Instale solo desde las tiendas oficiales de arriba; evite sitios de descarga de terceros.
 
@@ -115,8 +120,8 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 
 1. Después de capturar, haz clic en **✏️ Editar** en la notificación emergente
 2. El editor de anotaciones se abre en una nueva pestaña
-3. Usa las herramientas **Rectángulo** o **Mosaico** de la barra de herramientas
-4. Elige un color (para rectángulos)
+3. Usa las herramientas **Rectángulo**, **Elipse**, **Flecha**, **Texto** o **Mosaico** de la barra de herramientas
+4. Elige un color (para formas y texto)
 5. Haz clic en **📋 Copiar** o **💾 Descargar** cuando termines
 
 ---
@@ -163,7 +168,7 @@ PageShot está construida con la privacidad como principio fundamental:
 | `storage` | Guardar tus preferencias localmente |
 | `offscreen` | Procesar imágenes en segundo plano |
 | `tabs` | Obtener información de pestañas para la coordinación de capturas |
-| `debugger` | Necesario para la unión de capturas de página completa en ciertas compilaciones de Chromium |
+| `debugger` | Necesario para la unión de capturas de página completa en ciertas compilaciones de Chromium (solo Chrome / Edge) |
 
 ---
 

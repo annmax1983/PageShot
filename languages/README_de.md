@@ -4,7 +4,7 @@
 
 Eine schlanke Browser-Erweiterung für Screenshots — ganze Seite, sichtbarer Bereich oder beliebige Auswahl. Kein erzwungenes Wasserzeichen, komplette lokale Verarbeitung.
 
-> Chromium-basiert · Manifest V3 · Kein Tracking · Verarbeitung vollständig im Browser
+> Chrome / Edge / Firefox · Manifest V3 · Kein Tracking · Verarbeitung vollständig im Browser
 
 ---
 
@@ -18,7 +18,7 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 | 💧 **Kein Wasserzeichen** | Saubere Screenshots, kein Branding auf deinen Aufnahmen. |
 | 📄 **Ganze Seite** | Klick auf einen langen Screenshot — scrollt und fügt automatisch zusammen. |
 | 📋 **Kopieren & Einfügen** | Sofort in die Zwischenablage kopieren — direkt in Chats, E-Mails, Dokumente einfügen. |
-| ✏️ **Integrierte Annotation** | Rechtecke und Mosaik-Blur vor dem Teilen zeichnen. |
+| ✏️ **Integrierte Annotation** | Rechtecke, Ellipsen, Pfeile, Text und Mosaik-Blur vor dem Teilen zeichnen. |
 | ⚡ **Leichtgewichtig** | Keine Frameworks, kein Ballast. |
 | 🌍 **6 Sprachen** | Erkennt automatisch deine Browsersprache. |
 
@@ -36,6 +36,9 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 | 📋 **In Zwischenablage kopieren** | Ein-Klick-Kopie nach der Aufnahme. Direkt in jede App mit Strg+V einfügen. |
 | 💾 **Als PNG herunterladen** | Dateien werden automatisch benannt: Seitentitel + Datum (z.B. `GitHub_-_Homepage_2026-07-07.png`). |
 | ✏️ **Rechteck-Annotation** | Farbige Rechtecke zum Markieren von Bereichen zeichnen. 5 Farben verfügbar: Rot, Blau, Grün, Schwarz, Weiß. |
+| ◯ **Ellipsen-Annotation** | Eine Ellipse um ein Steuerelement, einen Fehler oder einen Bereich zeichnen. |
+| ➜ **Pfeil-Annotation** | Mit einem Pfeil auf die genaue Schaltfläche, das Feld oder die Zeile zeigen. |
+| T **Text-Annotation** | Eine Beschriftung direkt auf den Screenshot schreiben. |
 | 🟦 **Mosaik-Blur** | Sensible Inhalte verpixeln — Passwörter, persönliche Daten, private Nachrichten. |
 | ⌨️ **Tastenkürzel** | `Strg+Umschalt+V` — Sichtbaren Bereich erfassen + kopieren · `Strg+Umschalt+F` — Ganze Seite + Download · `Strg+Umschalt+S` — Auswahlmodus. |
 | 🔤 **6-Sprachen-i18n** | UI passt sich automatisch an deine Browsersprache an: English, 中文, 日本語, Español, Deutsch, Français. |
@@ -46,7 +49,6 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 | Funktion | Beschreibung |
 |----------|--------------|
 | 📑 **Als PDF exportieren** | Jeden aufgenommenen Screenshot (inkl. langer Seiten) als PDF-Dokument exportieren — aus dem Annotation-Editor heraus |
-| 💬 **Priority Support** | Prioritäts-E-Mail-Support für Premium-Nutzer |
 
 ### Kostenlos vs. Premium
 
@@ -54,11 +56,10 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 |---|:---:|:---:|
 | Ganze Seite / Sichtbar / Auswahl | ✅ | ✅ |
 | In Zwischenablage kopieren & als PNG herunterladen | ✅ | ✅ |
-| Rechteck-Annotation & Mosaik-Blur | ✅ | ✅ |
+| Rechteck-, Ellipsen-, Pfeil- und Text-Annotation & Mosaik-Blur | ✅ | ✅ |
 | Tastenkürzel | ✅ | ✅ |
 | Fixierte Elemente behandeln | ✅ | ✅ |
 | Als PDF exportieren | — | ✅ |
-| Priority Support | — | ✅ |
 
 ---
 
@@ -76,10 +77,13 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 |---------|--------|
 | Google Chrome | ✅ Vollständig unterstützt |
 | Microsoft Edge | ✅ Vollständig unterstützt |
+| Mozilla Firefox | ✅ Vollständig unterstützt |
 | Brave | ✅ Unterstützt |
 | Opera | ✅ Unterstützt |
 | Vivaldi | ✅ Unterstützt |
 | Jeder Chromium-basierte Browser | ✅ Unterstützt (Manifest V3) |
+
+> **Firefox-Hinweis:** Firefox bietet keine Debugger-API für Erweiterungen, daher gibt es keinen Debugger-Modus. Firefox kennt kein Offscreen-Dokument (offscreen API), daher die Ganzseiten-Aufnahme auf Scroll-Stitching innerhalb der Seite zurückgreift; die Berechtigung `offscreen` wird in der Firefox-Version nicht angefordert. Die übrigen Funktionen verhalten sich wie unter Chrome / Edge.
 
 ---
 
@@ -89,6 +93,7 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 |---|---|
 | Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
 | Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
+| Firefox-Add-ons (AMO) | 🔜 In Prüfung – Link folgt nach der Freigabe |
 
 > Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
@@ -115,8 +120,8 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 
 1. Nach der Aufnahme klicke auf **✏️ Bearbeiten** im Toast
 2. Der Annotation-Editor öffnet sich in einem neuen Tab
-3. Verwende **Rechteck** oder **Mosaik** aus der Toolbar
-4. Wähle eine Farbe (für Rechtecke)
+3. Verwende **Rechteck**, **Ellipse**, **Pfeil**, **Text** oder **Mosaik** aus der Toolbar
+4. Wähle eine Farbe (für Formen und Text)
 5. Klicke auf **📋 Kopieren** oder **💾 Herunterladen**, wenn fertig
 
 ---
@@ -163,7 +168,7 @@ PageShot wurde mit Datenschutz als Grundprinzip entwickelt:
 | `storage` | Einstellungen lokal speichern |
 | `offscreen` | Bilder im Hintergrund verarbeiten |
 | `tabs` | Tab-Info für Aufnahmekoordination abrufen |
-| `debugger` | Erforderlich für Ganze-Seite-Screenshot-Zusammenführung auf bestimmten Chromium-Builds |
+| `debugger` | Erforderlich für Ganze-Seite-Screenshot-Zusammenführung auf bestimmten Chromium-Builds (nur Chrome / Edge) |
 
 ---
 
