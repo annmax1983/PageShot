@@ -96,7 +96,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 |---|---|
 | Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
 | Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
-| Firefox Add-ons (AMO) | 🔜 Under review — link will be added once the listing is live |
+| Firefox Add-ons (AMO) | [Install for Firefox](https://addons.mozilla.org/firefox/addon/pageshot-full-page-screenshot/) |
 
 > Install only from the official stores above — avoid third-party download sites.
 
@@ -199,3 +199,12 @@ If you find PageShot helpful, consider supporting the project!
 
 > **Note:** This repository is a project showcase. The full source code is not published here.
 
+---
+
+## Links
+
+- **Official website:** https://annmax1983.com/
+- **This extension:** https://annmax1983.com/extensions/pageshot
+- **Privacy policy:** https://annmax1983.com/privacy
+- **Contact:** support@annmax1983.com
+- **☕ Support this project (Ko-fi):** https://ko-fi.com/annmax?ref=pageshot

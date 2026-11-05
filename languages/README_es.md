@@ -93,7 +93,7 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 |---|---|
 | Chrome Web Store | [Instalar en Chrome](https://chromewebstore.google.com/detail/jonikcknondlhibmemapljjodhjikcje) |
 | Complementos de Microsoft Edge | [Instalar en Edge](https://microsoftedge.microsoft.com/addons/detail/pooedlcmpdgcfkjfojhblenegbhhahmd) |
-| Complementos de Firefox (AMO) | 🔜 En revisión: el enlace se añadirá al publicarse |
+| Complementos de Firefox (AMO) | [Instalar para Firefox](https://addons.mozilla.org/firefox/addon/pageshot-full-page-screenshot/) |
 
 > Instale solo desde las tiendas oficiales de arriba; evite sitios de descarga de terceros.
 
@@ -189,3 +189,12 @@ Copyright © 2026 PageShot. Todos los derechos reservados.
 Si te resulta útil PageShot, ¡considera apoyar el proyecto!
 
 **[👉 Haz clic aquí para apoyar](https://ko-fi.com/annmax?ref=pageshot)**
+
+---
+
+## Enlaces
+
+- **Sitio oficial:** https://annmax1983.com/
+- **Esta extensión:** https://annmax1983.com/extensions/pageshot
+- **Privacidad:** https://annmax1983.com/privacy
+- **Contacto:** support@annmax1983.com
