@@ -170,7 +170,6 @@ PageShot is built with privacy as a core principle:
 | `scripting` | Inject the selection overlay on web pages | All |
 | `storage` | Save your preferences locally | All |
 | `offscreen` | Process images in the background | Chrome / Edge only |
-| `tabs` | Get tab info for capture coordination | Chrome / Edge only |
 | `debugger` | Required for full-page screenshot stitching on certain Chromium builds | Chrome / Edge only |
 
 On Firefox the extension requests only the first six (`activeTab`, `contextMenus`, `downloads`, `clipboardWrite`, `scripting`, `storage`) plus access to `https://api.annmax1983.com/*` for optional licence checks. Firefox never sees a `debugger` warning because that permission is not declared in the Firefox build.
@@ -183,9 +182,19 @@ This screenshot tool is only for users' personal learning, document sorting and 
 
 ---
 
+## Source Code Notice
+
+> ⚠️ **This repository is for project showcase only — the full source code is not published here.** It contains the user documentation, release notes and support information for the extension.
+
+> 📥 **Download and install only from the official browser stores:** Chrome Web Store · Microsoft Edge Add-ons · Firefox Add-ons (AMO). No offline installation package is distributed from this repository.
+
+---
+
 ## License
 
 Copyright © 2026 PageShot. All rights reserved.
+
+This software is proprietary and closed-source. Without prior written authorization from the author, decompiling, reverse-engineering, cracking, modifying, repackaging, redistributing or reselling the program (in whole or in part) is strictly prohibited.
 
 ---
 
@@ -194,10 +203,6 @@ Copyright © 2026 PageShot. All rights reserved.
 If you find PageShot helpful, consider supporting the project!
 
 **[👉 Click here to support](https://ko-fi.com/annmax?ref=pageshot)**
-
----
-
-> **Note:** This repository is a project showcase. The full source code is not published here.
 
 ---
 

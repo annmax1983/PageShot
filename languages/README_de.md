@@ -167,7 +167,6 @@ PageShot wurde mit Datenschutz als Grundprinzip entwickelt:
 | `scripting` | Auswahl-Overlay auf Webseiten injizieren |
 | `storage` | Einstellungen lokal speichern |
 | `offscreen` | Bilder im Hintergrund verarbeiten |
-| `tabs` | Tab-Info für Aufnahmekoordination abrufen |
 | `debugger` | Erforderlich für Ganze-Seite-Screenshot-Zusammenführung auf bestimmten Chromium-Builds (nur Chrome / Edge) |
 
 ---
@@ -178,9 +177,19 @@ Dieses Screenshot-Tool dient ausschließlich dem persönlichen Lernen, der Dokum
 
 ---
 
+## Hinweis zum Quellcode
+
+> ⚠️ **Dieses Repository dient ausschließlich der Projektpräsentation — der vollständige Quellcode wird hier nicht veröffentlicht.** Es enthält nur die Nutzungsdokumentation, die Release-Notizen und Support-Informationen zur Erweiterung.
+
+> 📥 **Installation ausschließlich über die offiziellen Browser-Stores:** Chrome Web Store · Microsoft Edge Add-ons · Firefox-Add-ons (AMO). Von hier werden keine Offline-Installer verteilt.
+
+---
+
 ## Lizenz
 
 Copyright © 2026 PageShot. Alle Rechte vorbehalten.
+
+Diese Software ist proprietär und quellgeschlossen. Ohne vorherige schriftliche Genehmigung des Autors ist das Dekompilieren, Reverse-Engineering, Knacken, Verändern, Neuverpacken, Weiterverbreiten oder Weiterverkaufen der Software (ganz oder teilweise) streng untersagt.
 
 ---
 
@@ -189,10 +198,6 @@ Copyright © 2026 PageShot. Alle Rechte vorbehalten.
 Wenn dir PageShot hilft, unterstütze das Projekt gerne!
 
 **[👉 Hier unterstützen](https://ko-fi.com/annmax?ref=pageshot)**
-
----
-
-> **Hinweis:** Dieses Repository dient ausschließlich der **Projektpräsentation**. Es enthält nicht den vollständigen Quellcode, das Manifest, Icons oder Build-Skripte. Der vollständige Quellcode wird hier **nicht** veröffentlicht.
 
 ---
 

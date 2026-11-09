@@ -167,7 +167,6 @@ PageShot está construida con la privacidad como principio fundamental:
 | `scripting` | Inyectar la superposición de selección en páginas web |
 | `storage` | Guardar tus preferencias localmente |
 | `offscreen` | Procesar imágenes en segundo plano |
-| `tabs` | Obtener información de pestañas para la coordinación de capturas |
 | `debugger` | Necesario para la unión de capturas de página completa en ciertas compilaciones de Chromium (solo Chrome / Edge) |
 
 ---
@@ -178,9 +177,19 @@ Esta herramienta de captura de pantalla es solo para el uso personal del usuario
 
 ---
 
+## Aviso sobre el código fuente
+
+> ⚠️ **Este repositorio es solo para presentar el proyecto: el código fuente completo no se publica aquí.** Solo contiene la documentación de uso, las notas de versión y la información de soporte de la extensión.
+
+> 📥 **Descárgala e instálala únicamente desde las tiendas oficiales de navegadores:** Chrome Web Store · Microsoft Edge Add-ons · Complementos de Firefox (AMO). Desde aquí no se distribuye ningún instalador sin conexión.
+
+---
+
 ## Licencia
 
 Copyright © 2026 PageShot. Todos los derechos reservados.
+
+Este software es propietario y de código cerrado. Sin autorización previa por escrito del autor, queda estrictamente prohibido descompilar, aplicar ingeniería inversa, crackear, modificar, reempaquetar, redistribuir o revender el programa (total o parcialmente).
 
 ---
 
