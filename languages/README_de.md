@@ -18,7 +18,7 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 | 💧 **Kein Wasserzeichen** | Saubere Screenshots, kein Branding auf deinen Aufnahmen. |
 | 📄 **Ganze Seite** | Klick auf einen langen Screenshot — scrollt und fügt automatisch zusammen. |
 | 📋 **Kopieren & Einfügen** | Sofort in die Zwischenablage kopieren — direkt in Chats, E-Mails, Dokumente einfügen. |
-| ✏️ **Integrierte Annotation** | Rechtecke, Ellipsen, Pfeile, Text und Mosaik-Blur vor dem Teilen zeichnen. |
+| ✏️ **Integrierte Annotation** | *(Pro)* Rechtecke, Ellipsen, Pfeile, Text und Mosaik-Blur vor dem Teilen zeichnen. |
 | ⚡ **Leichtgewichtig** | Keine Frameworks, kein Ballast. |
 | 🌍 **6 Sprachen** | Erkennt automatisch deine Browsersprache. |
 
@@ -35,31 +35,33 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 | ✂️ **Auswahl** | Ziehen, um einen beliebigen Bereich auf der Seite mit Fadenkreuz-Overlay auszuwählen. Präzise und flexibel. |
 | 📋 **In Zwischenablage kopieren** | Ein-Klick-Kopie nach der Aufnahme. Direkt in jede App mit Strg+V einfügen. |
 | 💾 **Als PNG herunterladen** | Dateien werden automatisch benannt: Seitentitel + Datum (z.B. `GitHub_-_Homepage_2026-07-07.png`). |
-| ✏️ **Rechteck-Annotation** | Farbige Rechtecke zum Markieren von Bereichen zeichnen. 5 Farben verfügbar: Rot, Blau, Grün, Schwarz, Weiß. |
-| ◯ **Ellipsen-Annotation** | Eine Ellipse um ein Steuerelement, einen Fehler oder einen Bereich zeichnen. |
-| ➜ **Pfeil-Annotation** | Mit einem Pfeil auf die genaue Schaltfläche, das Feld oder die Zeile zeigen. |
-| T **Text-Annotation** | Eine Beschriftung direkt auf den Screenshot schreiben. |
-| 🟦 **Mosaik-Blur** | Sensible Inhalte verpixeln — Passwörter, persönliche Daten, private Nachrichten. |
 | ⌨️ **Tastenkürzel** | `Strg+Umschalt+V` — Sichtbaren Bereich erfassen + kopieren · `Strg+Umschalt+F` — Ganze Seite + Download · `Strg+Umschalt+S` — Auswahlmodus. |
 | 🔤 **6-Sprachen-i18n** | UI passt sich automatisch an deine Browsersprache an: English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Fixierte Elemente** | Erkennt und entfernt automatisch Sticky-Header/Footer aus langen Screenshots. |
 
-### ⭐ Premium-Funktionen (Lizenz erforderlich)
+> ⭐ Anmerkungen, Mosaik und PDF-Export sind Pro-Funktionen — ohne Lizenz lässt sich der Editor weiterhin zum Ansehen, Zoomen, Kopieren und Speichern öffnen.
+
+### ⭐ Pro-Funktionen (Lizenz erforderlich)
 
 | Funktion | Beschreibung |
 |----------|--------------|
-| 📑 **Als PDF exportieren** | Jeden aufgenommenen Screenshot (inkl. langer Seiten) als PDF-Dokument exportieren — aus dem Annotation-Editor heraus |
+| ✏️ **Anmerkungswerkzeuge** | Rechteck, Ellipse, Pfeil und Text, fünf Farben, Rückgängig und Leeren. |
+| 🟦 **Mosaik** | Passwörter, persönliche Daten oder private Nachrichten vor dem Teilen verpixeln. |
+| 📑 **A4-PDF-Export** | Eine lange Aufnahme wird zu druckbaren, paginierten A4-Seiten. |
 
-### Kostenlos vs. Premium
+> Aktivierung im Popup unter ⚙ Einstellungen oder direkt im Editor: Ein Klick auf ein gesperrtes Werkzeug öffnet dasselbe Eingabefeld.
 
-| | Kostenlos | Premium |
+### Kostenlos vs. Pro
+
+| | Kostenlos | Pro |
 |---|:---:|:---:|
 | Ganze Seite / Sichtbar / Auswahl | ✅ | ✅ |
 | In Zwischenablage kopieren & als PNG herunterladen | ✅ | ✅ |
-| Rechteck-, Ellipsen-, Pfeil- und Text-Annotation & Mosaik-Blur | ✅ | ✅ |
+| Rechteck-, Ellipsen-, Pfeil- und Textanmerkungen | — | ✅ |
+| Mosaik zum Verbergen sensibler Daten | — | ✅ |
 | Tastenkürzel | ✅ | ✅ |
 | Fixierte Elemente behandeln | ✅ | ✅ |
-| Als PDF exportieren | — | ✅ |
+| A4-PDF-Export | — | ✅ |
 
 ---
 
@@ -117,6 +119,8 @@ Die meisten Screenshot-Tools verlangen Geld für Ganze-Seite-Captures, fügen Wa
 | `Strg+Umschalt+S` | Auswahlmodus starten |
 
 ### Annotation
+
+> ⭐ Die fünf Werkzeuge unten erfordern Pro. In der kostenlosen Version öffnet ein Klick darauf das Aktivierungsfeld direkt im Editor.
 
 1. Nach der Aufnahme klicke auf **✏️ Bearbeiten** im Toast
 2. Der Annotation-Editor öffnet sich in einem neuen Tab

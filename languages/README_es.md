@@ -18,7 +18,7 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 | 💧 **Sin marca de agua** | Capturas limpias, sin branding impuesto en tus capturas. |
 | 📄 **Captura de página completa** | Captura larga con un clic — se desplaza y une automáticamente. |
 | 📋 **Copiar y pegar** | Copia al portapapeles al instante — pega directamente en chats, correos y documentos. |
-| ✏️ **Anotación integrada** | Dibuja rectángulos, elipses, flechas y texto, además de desenfoque mosaico, antes de compartir. |
+| ✏️ **Anotación integrada** | *(Pro)* Dibuja rectángulos, elipses, flechas y texto, además de desenfoque mosaico, antes de compartir. |
 | ⚡ **Ligera** | Sin frameworks, sin peso muerto. |
 | 🌍 **6 idiomas** | Detecta automáticamente el idioma de tu navegador. |
 
@@ -35,31 +35,33 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 | ✂️ **Captura por selección** | Arrastra para seleccionar cualquier región de la página con una superposición de punto de mira. Precisa y flexible. |
 | 📋 **Copiar al portapapeles** | Copia con un clic después de la captura. Pega directamente en cualquier aplicación con Ctrl+V. |
 | 💾 **Descargar como PNG** | Nombra automáticamente los archivos con el título de la página + fecha (ej. `GitHub_-_Homepage_2026-07-07.png`). |
-| ✏️ **Anotación con rectángulos** | Dibuja rectángulos de colores para resaltar áreas. 5 colores disponibles: rojo, azul, verde, negro, blanco. |
-| ◯ **Anotación con elipses** | Dibuja una elipse alrededor de un control, un error o una zona. |
-| ➜ **Anotación con flechas** | Señala con una flecha el botón, el campo o la línea exactos. |
-| T **Anotación de texto** | Escribe una etiqueta directamente sobre la captura. |
-| 🟦 **Desenfoque mosaico** | Pixela contenido sensible — contraseñas, información personal, mensajes privados. |
 | ⌨️ **Atajos de teclado** | `Ctrl+Shift+V` — Captura visible + copiar · `Ctrl+Shift+F` — Página completa + descargar · `Ctrl+Shift+S` — Modo selección. |
 | 🔤 **i18n en 6 idiomas** | La interfaz se adapta automáticamente al idioma de tu navegador: English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Gestión de elementos fijos** | Detecta y elimina automáticamente encabezados/pies de página fijos de las capturas largas. |
 
-### ⭐ Funcionalidades Premium (requieren licencia)
+> ⭐ Las anotaciones, el mosaico y la exportación a PDF son funciones Pro; sin licencia el editor sigue sirviendo para ver, ampliar, copiar y guardar.
+
+### ⭐ Funcionalidades Pro (requieren licencia)
 
 | Funcionalidad | Descripción |
 |---------|-------------|
-| 📑 **Exportar como PDF** | Exporta cualquier captura (incluidas páginas largas) como documento PDF — desde el editor de anotaciones |
+| ✏️ **Herramientas de anotación** | Rectángulo, elipse, flecha y texto, cinco colores, deshacer y limpiar. |
+| 🟦 **Mosaico** | Pixela contraseñas, datos personales o mensajes privados antes de compartir. |
+| 📑 **Exportación a PDF A4** | Convierte una captura larga en páginas A4 imprimibles y paginadas. |
 
-### Gratis vs Premium
+> Actívalo en el popup, en ⚙ Ajustes, o directamente en el editor: al pulsar una herramienta bloqueada aparece el mismo campo de clave.
 
-| | Gratis | Premium |
+### Gratis vs Pro
+
+| | Gratis | Pro |
 |---|:---:|:---:|
 | Captura de página completa / visible / selección | ✅ | ✅ |
 | Copiar al portapapeles y descargar como PNG | ✅ | ✅ |
-| Anotación con rectángulos, elipses, flechas y texto, más desenfoque mosaico | ✅ | ✅ |
+| Anotación de rectángulo, elipse, flecha y texto | — | ✅ |
+| Mosaico para ocultar datos sensibles | — | ✅ |
 | Atajos de teclado | ✅ | ✅ |
 | Gestión de elementos fijos | ✅ | ✅ |
-| Exportar como PDF | — | ✅ |
+| Exportación a PDF A4 | — | ✅ |
 
 ---
 
@@ -117,6 +119,8 @@ La mayoría de herramientas de captura de pantalla cobran por la captura de pág
 | `Ctrl+Shift+S` | Entrar en modo selección |
 
 ### Anotación
+
+> ⭐ Las cinco herramientas de abajo requieren Pro. En la versión gratis, al pulsarlas se abre el cuadro de activación dentro del editor.
 
 1. Después de capturar, haz clic en **✏️ Editar** en la notificación emergente
 2. El editor de anotaciones se abre en una nueva pestaña

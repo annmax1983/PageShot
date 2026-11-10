@@ -18,7 +18,7 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 | 💧 **Sans filigrane** | Captures propres, aucune marque imposée sur vos images. |
 | 📄 **Capture de page complète** | Capture longue en un clic — défilement et assemblage automatiques. |
 | 📋 **Copier et coller** | Copie instantanée dans le presse-papiers — collez directement dans vos conversations, e-mails, documents. |
-| ✏️ **Annotations intégrées** | Dessinez des rectangles, des ellipses, des flèches et du texte, et appliquez un flou en mosaïque avant de partager. |
+| ✏️ **Annotations intégrées** | *(Pro)* Dessinez des rectangles, des ellipses, des flèches et du texte, et appliquez un flou en mosaïque avant de partager. |
 | ⚡ **Léger** | Aucun framework, aucun surplus. |
 | 🌍 **6 langues** | Détecte automatiquement la langue de votre navigateur. |
 
@@ -35,31 +35,33 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 | ✂️ **Capture par sélection** | Glissez pour sélectionner une zone de la page avec un réticule de précision. Flexible et précis. |
 | 📋 **Copier dans le presse-papiers** | Copie en un clic après la capture. Collez directement dans n'importe quelle application avec Ctrl+V. |
 | 💾 **Télécharger en PNG** | Nomme automatiquement les fichiers avec le titre de la page + la date (ex. : `GitHub_-_Homepage_2026-07-07.png`). |
-| ✏️ **Annotation par rectangle** | Dessinez des rectangles colorés pour mettre en avant des zones. 5 couleurs disponibles : rouge, bleu, vert, noir, blanc. |
-| ◯ **Annotation par ellipse** | Entourez un contrôle, une erreur ou une zone avec une ellipse. |
-| ➜ **Annotation par flèche** | Pointez le bouton, le champ ou la ligne exacts avec une flèche. |
-| T **Annotation texte** | Saisissez une étiquette directement sur la capture. |
-| 🟦 **Flou en mosaïque** | Pixellisez les contenus sensibles — mots de passe, informations personnelles, messages privés. |
 | ⌨️ **Raccourcis clavier** | `Ctrl+Shift+V` — Capturer la zone visible + copier · `Ctrl+Shift+F` — Page complète + télécharger · `Ctrl+Shift+S` — Mode sélection. |
 | 🔤 **i18n en 6 langues** | L'interface s'adapte automatiquement à la langue de votre navigateur : English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Gestion des éléments fixes** | Détecte et supprime automatiquement les en-têtes/pieds de page fixes des captures longues. |
 
-### ⭐ Fonctionnalités Premium (licence requise)
+> ⭐ Les annotations, la mosaïque et l'export PDF sont des fonctions Pro ; sans licence, l'éditeur reste utilisable pour voir, zoomer, copier et enregistrer.
+
+### ⭐ Fonctionnalités Pro (licence requise)
 
 | Fonctionnalité | Description |
 |---------|-------------|
-| 📑 **Export en PDF** | Exportez n'importe quelle capture (y compris les longues pages) en document PDF — depuis l'éditeur d'annotations |
+| ✏️ **Outils d'annotation** | Rectangle, ellipse, flèche et texte, cinq couleurs, annuler et effacer. |
+| 🟦 **Mosaïque** | Pixellise mots de passe, données personnelles ou messages privés avant de partager. |
+| 📑 **Export PDF A4** | Transforme une longue capture en pages A4 imprimables et paginées. |
 
-### Gratuit vs Premium
+> Activation dans le popup sous ⚙ Réglages, ou directement dans l'éditeur : cliquer un outil verrouillé ouvre le même champ de clé.
 
-| | Gratuit | Premium |
+### Gratuit vs Pro
+
+| | Gratuit | Pro |
 |---|:---:|:---:|
 | Capture page complète / zone visible / sélection | ✅ | ✅ |
 | Copier dans le presse-papiers et télécharger en PNG | ✅ | ✅ |
-| Annotation par rectangle, ellipse, flèche et texte, et flou en mosaïque | ✅ | ✅ |
+| Annotations rectangle, ellipse, flèche et texte | — | ✅ |
+| Mosaïque pour masquer les données sensibles | — | ✅ |
 | Raccourcis clavier | ✅ | ✅ |
 | Gestion des éléments fixes | ✅ | ✅ |
-| Export en PDF | — | ✅ |
+| Export PDF A4 | — | ✅ |
 
 ---
 
@@ -117,6 +119,8 @@ La plupart des outils de capture d'écran facturent la capture de page complète
 | `Ctrl+Shift+S` | Entrer en mode sélection |
 
 ### Annotations
+
+> ⭐ Les cinq outils ci-dessous nécessitent Pro. Dans la version gratuite, un clic ouvre le champ d'activation directement dans l'éditeur.
 
 1. Après la capture, cliquez sur **✏️ Modifier** dans la notification
 2. L'éditeur d'annotations s'ouvre dans un nouvel onglet

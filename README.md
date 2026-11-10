@@ -18,7 +18,7 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | 💧 **No Watermark** | Clean screenshots, no branding imposed on your captures. |
 | 📄 **Full Page Capture** | One-click long screenshot — scrolls and stitches automatically. |
 | 📋 **Copy & Paste** | Copy to clipboard instantly — paste directly into chats, emails, documents. |
-| ✏️ **Built-in Annotation** | Draw rectangles, ellipses, arrows, text and mosaic blur before sharing. |
+| ✏️ **Built-in Annotation** | *(Pro)* Draw rectangles, ellipses, arrows, text and mosaic blur before sharing. |
 | ⚡ **Lightweight** | No frameworks, no bloat. |
 | 🌍 **6 Languages** | Auto-detects your browser language. |
 
@@ -35,31 +35,33 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | ✂️ **Selection Capture** | Drag to select any region on the page with a crosshair overlay. Precise and flexible. |
 | 📋 **Copy to Clipboard** | One-click copy after capture. Paste directly into any app with Ctrl+V. |
 | 💾 **Download as PNG** | Auto-names files with page title + date (e.g. `GitHub_-_Homepage_2026-07-07.png`). |
-| ✏️ **Rectangle Annotation** | Draw colored rectangles to highlight areas. 5 colors available: red, blue, green, black, white. |
-| ◯ **Ellipse Annotation** | Draw an ellipse around a control, an error or a region. |
-| ➜ **Arrow Annotation** | Point an arrow at the exact button, field or line you mean. |
-| T **Text Annotation** | Type a label directly on the screenshot. |
-| 🟦 **Mosaic Blur** | Pixelate sensitive content — passwords, personal info, private messages. |
 | ⌨️ **Keyboard Shortcuts** | `Ctrl+Shift+V` — Capture visible + copy · `Ctrl+Shift+F` — Full page + download · `Ctrl+Shift+S` — Selection mode. |
 | 🔤 **6-Language i18n** | UI auto-matches your browser language: English, 中文, 日本語, Español, Deutsch, Français. |
 | 🔒 **Fixed Element Handling** | Automatically detects and removes sticky headers/footers from long screenshots. |
 
-### ⭐ Premium Features (License Required)
+> ⭐ Annotation, mosaic blur and PDF export are Pro features — without a licence the editor still opens for viewing, zooming, copying and saving.
+
+### ⭐ Pro Features (License Required)
 
 | Feature | Description |
 |---------|-------------|
-| 📑 **Export as PDF** | Export any captured screenshot (including long pages) as a PDF document — from the annotation editor |
+| ✏️ **Annotation tools** | Rectangle, ellipse, arrow and text labels, five colours, undo and clear. |
+| 🟦 **Mosaic blur** | Pixelate passwords, personal info or private messages before sharing. |
+| 📑 **A4 PDF export** | Turn a long capture into printable, paginated A4 pages. |
 
-### Free vs Premium
+> Activate in the popup under ⚙ Settings, or straight in the editor: clicking a locked tool opens the same key box.
 
-| | Free | Premium |
+### Free vs Pro
+
+| | Free | Pro |
 |---|:---:|:---:|
 | Full page / visible / selection capture | ✅ | ✅ |
 | Copy to clipboard & download as PNG | ✅ | ✅ |
-| Rectangle, ellipse, arrow and text annotation & mosaic blur | ✅ | ✅ |
+| Rectangle, ellipse, arrow and text annotation | — | ✅ |
+| Mosaic blur | — | ✅ |
 | Keyboard shortcuts | ✅ | ✅ |
 | Fixed element handling | ✅ | ✅ |
-| Export as PDF | — | ✅ |
+| A4 PDF export | — | ✅ |
 
 ---
 
@@ -120,6 +122,8 @@ Most screenshot tools charge for full-page capture, add watermarks, or upload yo
 | `Ctrl+Shift+S` | Enter selection mode |
 
 ### Annotation
+
+> ⭐ The five tools below require Pro. Clicking one in the free version opens the activation box right inside the editor.
 
 1. After capturing, click **✏️ Edit** on the toast
 2. The annotation editor opens in a new tab
